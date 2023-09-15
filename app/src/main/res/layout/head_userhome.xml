@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorGrayContent"
+    android:layout_marginLeft="-15dp"
+    android:layout_marginRight="-15dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearVisitor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvVisitUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:textColor="@color/colorIndecators"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvVisitHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_user_home_visit_empty"
+            android:textColor="@color/colorTextGray"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <org.xiaoxingqi.shengxi.wedgit.LayoutTopUserButton
+            android:id="@+id/btnVoices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:echoTitle="记忆"
+            app:echoImg="@drawable/selector_user_home_voices" />
+
+        <org.xiaoxingqi.shengxi.wedgit.LayoutTopUserButton
+            android:id="@+id/btnPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            app:echoTitle="相册"
+            app:echoImg="@drawable/selector_user_home_photo" />
+
+        <org.xiaoxingqi.shengxi.wedgit.LayoutTopUserButton
+            android:id="@+id/btnMachine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            app:echoTitle="时光机"
+            app:echoImg="@drawable/selector_user_home_machine" />
+
+        <org.xiaoxingqi.shengxi.wedgit.LayoutTopUserButton
+            android:id="@+id/btnMovies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:echoTitle="电影"
+            app:echoImg="@drawable/selector_user_home_movies" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <org.xiaoxingqi.shengxi.wedgit.LayoutTopUserButton
+            android:id="@+id/btnBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:echoTitle="书籍"
+            app:echoImg="@drawable/selector_user_home_books" />
+
+        <org.xiaoxingqi.shengxi.wedgit.LayoutTopUserButton
+            android:id="@+id/btnSong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            app:echoTitle="音乐"
+            app:echoImg="@drawable/selector_user_home_songs" />
+
+
+        <org.xiaoxingqi.shengxi.wedgit.LayoutTopUserButton
+            android:id="@+id/btnDubbing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:echoTitle="配音"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            app:echoImg="@drawable/selector_user_home_dubbing" />
+
+        <org.xiaoxingqi.shengxi.wedgit.LayoutTopUserButton
+            android:id="@+id/btnPaint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:echoImg="@drawable/selector_home_paint"
+            app:echoTitle="画" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/shape_r_10_white_deep_night">
+
+        <TextView
+            android:id="@+id/tvAlarmName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="13dp"
+            android:text="专辑"
+            android:textColor="@color/colorNormalIndecator"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvAddAlbum"
+            android:layout_width="71dp"
+            android:layout_height="27dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_r_13_gray"
+            android:gravity="center"
+            android:text="+添加专辑"
+            android:textColor="@color/colorNormalIndecator"
+            android:textSize="11sp" />
+
+        <LinearLayout
+            android:id="@+id/linearAlbum"
+            android:layout_marginTop="36dp"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="25dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeTalkAlbum"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/shape_r_10_white_deep_night">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:text="@string/string_9"
+                android:textColor="@color/colorNormalIndecator"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(仅自己可见)"
+                android:textColor="@color/colorTextGray"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvCreateTalkAlbum"
+            android:layout_width="71dp"
+            android:layout_height="27dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_r_13_gray"
+            android:gravity="center"
+            android:text="+添加专辑"
+            android:textColor="@color/colorNormalIndecator"
+            android:textSize="11sp" />
+
+        <LinearLayout
+            android:id="@+id/linearTalkAlbum"
+            android:layout_marginTop="36dp"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="25dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tvOtherVoices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="共享的心情"
+        android:includeFontPadding="false"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="15sp"
+        android:visibility="gone"
+        android:textColor="@color/colorNormalIndecator" />
+
+    <View
+        android:id="@+id/viewTopRadius"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/shape_white_top_r_10" />
+
+</LinearLayout>

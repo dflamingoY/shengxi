@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeFriendsInfo"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorContentBackground">
+
+        <TextView
+            android:id="@+id/tv_FriendCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/colorNormalIndecator"
+            android:text="@string/string_attention_empty"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_Explain_Friends"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:text="@string/string_30_relive"
+            android:textColor="@color/colorIndecators"
+            android:textSize="11sp" />
+    </RelativeLayout>
+
+    <org.xiaoxingqi.shengxi.wedgit.TransLayout
+        android:id="@+id/transLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGrayContent"
+        app:defaultState="progress"
+        app:emptyLayout="@layout/vew_empty_subscribe_resource"
+        app:offlineLayout="@layout/view_offline"
+        app:progressLayout="@layout/view_progress">
+
+        <org.xiaoxingqi.shengxi.wedgit.swiprecycler.SwipeMenuRecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorGrayContent" />
+
+    </org.xiaoxingqi.shengxi.wedgit.TransLayout>
+
+</LinearLayout>
+

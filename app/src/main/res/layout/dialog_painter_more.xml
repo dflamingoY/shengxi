@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/colorGrayContent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_Self"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="1dp"
+        android:visibility="gone"
+        android:background="@color/colorContentBackground"
+        android:gravity="center"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvBanGraffiti"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorContentBackground"
+        android:gravity="center"
+        android:text="@string/string_graffiti_ban"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_Delete"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorContentBackground"
+        android:gravity="center"
+        android:text="@string/string_Delete"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_Cancel"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorContentBackground"
+        android:gravity="center"
+        android:text="@string/string_cancel"
+        android:textColor="@color/colorTextGray"
+        android:textSize="15sp" />
+
+</LinearLayout>

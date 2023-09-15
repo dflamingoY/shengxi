@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_round_blue_r_10">
+
+    <TextView
+        android:id="@+id/tv_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:minWidth="48dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:text="Otc 2018"
+        android:textColor="@color/color_text_white"
+        android:textSize="9sp" />
+
+</RelativeLayout>

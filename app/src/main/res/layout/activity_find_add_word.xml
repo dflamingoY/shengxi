@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorGrayContent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/tintToolbar"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorContentBackground"
+        app:contentInsetStart="0dp">
+
+        <EditText
+            android:id="@+id/etContent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:hint="@string/string_6"
+            android:textSize="13sp"
+            android:maxLength="10"
+            android:textColorHint="@color/colorTextGray"
+            android:textColor="@color/colorNormalIndecator"
+            android:background="@null"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/shape_edittext_cursor"
+            android:imeOptions="actionDone"
+            android:paddingStart="15dp" />
+
+        <ImageView
+            android:id="@+id/ivClear"
+            android:visibility="gone"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:padding="5dp"
+            android:src="@mipmap/icon_grallery_close" />
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="wrap_content"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/string_cancel"
+            android:textColor="@color/colorNormalIndecator"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+</LinearLayout>

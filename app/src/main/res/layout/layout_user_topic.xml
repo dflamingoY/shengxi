@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorContentBackground"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingRight="15dp">
+
+    <TextView
+        android:id="@+id/tv_TitleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="13sp" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tv_AddTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_about_me_toggle"
+        android:gravity="center"
+        android:paddingLeft="21dp"
+        android:paddingTop="5dp"
+        android:paddingRight="21dp"
+        android:paddingBottom="5dp"
+        android:text="@string/string_sendAct_5"
+        android:textColor="@color/color_white_night"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tvTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/colorIndecators"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/iv_Arrow"
+        android:layout_width="12dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/icon_arrow"
+        android:visibility="gone" />
+
+</LinearLayout>

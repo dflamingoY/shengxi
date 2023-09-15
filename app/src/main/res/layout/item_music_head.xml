@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/relativeMovieCover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="2.5dp"
+        app:cardElevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_Movies"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tv_Score"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_alignBaseline="@+id/iv_Movies"
+                android:layout_alignLeft="@+id/iv_Movies"
+                android:layout_alignRight="@+id/iv_Movies"
+                android:layout_alignBottom="@+id/iv_Movies"
+                android:background="@drawable/shape_grident_black"
+                android:gravity="bottom"
+                android:paddingLeft="5dp"
+                android:paddingBottom="3dp"
+                android:textColor="@color/colorMovieTextColor"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/iv_Movies"
+                android:layout_alignTop="@+id/iv_Movies"
+                android:layout_alignEnd="@+id/iv_Movies"
+                android:layout_alignBottom="@+id/iv_Movies"
+                android:background="@drawable/shape_img_layer" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvMoviesName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeMovieCover"
+        android:layout_alignLeft="@+id/relativeMovieCover"
+        android:layout_alignRight="@+id/relativeMovieCover"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="10dp"
+        android:ellipsize="end"
+        android:ems="1"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="  "
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="13sp" />
+
+</RelativeLayout>

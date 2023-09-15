@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.xiaoxingqi.shengxi.wedgit.TransLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/transLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:defaultState="content"
+    app:emptyLayout="@layout/view_empty"
+    app:offlineLayout="@layout/view_offline"
+    app:progressLayout="@layout/view_progress">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="132dp"
+            android:includeFontPadding="false"
+            android:text="@string/string_select_character_1"
+            android:textColor="@color/color_474747"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:includeFontPadding="false"
+            android:text="@string/string_select_character_2"
+            android:textColor="#ffbababa"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_Introvert"
+            android:layout_width="154dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="72dp"
+            android:background="@drawable/shape_character_select_blue_r21"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/string_select_character_3"
+            android:textColor="#FF3EC1D3"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_Extrovert"
+            android:layout_width="154dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/shape_character_select_yellow_r21"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/string_select_character_4"
+            android:textColor="#FFFF9A00"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:includeFontPadding="false"
+            android:text="@string/string_select_character_5"
+            android:textColor="#ffbababa"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:includeFontPadding="false"
+            android:text="@string/string_select_character_6"
+            android:textColor="#ffbababa"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+</org.xiaoxingqi.shengxi.wedgit.TransLayout>

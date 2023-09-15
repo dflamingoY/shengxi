@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.xiaoxingqi.shengxi.wedgit.SqureRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="0.5dp"
+    android:layout_marginTop="1dp"
+    android:layout_marginRight="0.5dp">
+
+    <ImageView
+        android:id="@+id/iv_album"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <org.xiaoxingqi.shengxi.wedgit.CustomCheckImageView
+        android:id="@+id/checkAlbum"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignTop="@+id/iv_album"
+        android:layout_alignRight="@+id/iv_album"
+        android:padding="5dp" />
+
+    <View
+        android:id="@+id/viewCover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99ffffff"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_img_layer" />
+
+
+</org.xiaoxingqi.shengxi.wedgit.SqureRelativeLayout>

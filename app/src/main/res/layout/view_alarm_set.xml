@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="18dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorNormalIndecator"
+        android:layout_marginTop="7dp" />
+
+    <TextView
+        android:id="@+id/tvSetting"
+        android:gravity="center"
+        android:layout_width="82dp"
+        android:layout_height="29dp"
+        android:background="@drawable/shape_r_14_orange"
+        android:text="@string/string_go_setting"
+        android:textSize="12sp"
+        android:textColor="@color/color_white_3e3e42"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp" />
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/color_primary_text_High"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/tvSetting"
+        android:layout_marginTop="19dp" />
+
+    <TextView
+        android:id="@+id/tvIgnore"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/string_ignore"
+        android:layout_marginTop="13dp"
+        android:textSize="12sp"
+        android:textColor="@color/color_ffa77b"
+        android:layout_below="@+id/tvDesc" />
+
+</RelativeLayout>

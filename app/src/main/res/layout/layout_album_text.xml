@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:textSize="14sp"
+        android:textColor="@color/color_b2b2b2"
+        android:background="@drawable/shape_round_r_8_fafafa"
+        android:includeFontPadding="false"
+        android:gravity="center"
+        android:lineSpacingExtra="6dp"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

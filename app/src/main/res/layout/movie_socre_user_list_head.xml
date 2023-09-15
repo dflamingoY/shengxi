@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="195dp"
+    android:background="@color/colorOtherBg"
+    android:gravity="bottom"
+    android:orientation="horizontal"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp">
+
+    <org.xiaoxingqi.shengxi.wedgit.MovieUserScoreView
+        android:id="@+id/movieRanking2"
+        android:layout_width="0dp"
+        android:layout_height="149dp"
+        android:layout_marginBottom="-7dp"
+        android:layout_weight="1"
+        android:background="@color/colorContentBackground"
+        app:cardBackgroundColor="@color/colorContentBackground"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="1dp"
+        app:imgSize="43dp"
+        app:margin_Bottom="13dp"
+        app:scoreRanking="2"
+        app:scoreResid="@mipmap/icon_list_second" />
+
+    <org.xiaoxingqi.shengxi.wedgit.MovieUserScoreView
+        android:id="@+id/movieRanking1"
+        android:layout_width="0dp"
+        android:background="@color/colorContentBackground"
+        android:layout_height="180dp"
+        android:layout_marginBottom="-7dp"
+        android:layout_weight="1"
+        app:cardBackgroundColor="@color/colorContentBackground"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="2dp"
+        app:imgSize="53dp"
+        app:margin_Bottom="18dp"
+        app:scoreRanking="1"
+        app:scoreResid="@mipmap/icon_list_first" />
+
+    <org.xiaoxingqi.shengxi.wedgit.MovieUserScoreView
+        android:id="@+id/movieRanking3"
+        android:layout_width="0dp"
+        android:layout_height="149dp"
+        android:layout_marginBottom="-7dp"
+        android:layout_weight="1"
+        app:cardBackgroundColor="@color/colorContentBackground"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="1dp"
+        app:imgSize="43dp"
+        app:margin_Bottom="13dp"
+        android:background="@color/colorContentBackground"
+        app:scoreRanking="3"
+        app:scoreResid="@mipmap/icon_list_third" />
+
+</LinearLayout>

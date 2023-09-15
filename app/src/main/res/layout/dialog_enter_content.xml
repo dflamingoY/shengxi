@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="46dp"
+    android:layout_marginLeft="46dp"
+    android:background="@drawable/shape_white_r11"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/et_Content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_ignore"
+        android:gravity="start|center_vertical"
+        android:hint="请输入备注"
+        android:imeOptions="actionDone"
+        android:maxLength="10"
+        android:textCursorDrawable="@drawable/shape_edittext_cursor"
+        android:padding="14dp"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_Commit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/string_confirm"
+            android:textColor="@color/colorTextGray"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/tv_Cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/string_cancel"
+            android:textColor="@color/colorIndecators"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

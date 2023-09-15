@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorContentBackground"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingRight="15dp">
+
+    <ImageView
+        android:id="@+id/iv_titleSrc"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:id="@+id/tv_TitleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_Private"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:textColor="@color/colorTextGray"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:visibility="gone" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <View
+        android:id="@+id/viewHint"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:visibility="gone" />
+
+    <org.xiaoxingqi.shengxi.wedgit.skinView.SkinStatueText
+        android:id="@+id/tv_MsgCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="187dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="8dp"
+        android:ellipsize="end"
+        android:lineSpacingExtra="2sp"
+        android:singleLine="true"
+        android:textColor="@color/colorTextGray"
+        android:textSize="13sp"
+        app:statusTextSelected="@color/colorNormalIndecator" />
+
+    <ImageView
+        android:id="@+id/iv_Arrow"
+        android:layout_width="12dp"
+        android:layout_height="18dp"
+        android:src="@mipmap/icon_arrow" />
+
+</LinearLayout>

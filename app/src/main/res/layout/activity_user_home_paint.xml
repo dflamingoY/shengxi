@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorContentBackground"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorContentBackground"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:contentInsetStart="0dp">
+
+            <ImageView
+                android:id="@+id/btn_Back"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="8dp"
+                android:padding="4dp"
+                android:src="@mipmap/icon_back" />
+
+            <TextView
+                android:id="@+id/tv_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:text="我的画"
+                android:textColor="@color/colorNormalIndecator"
+                android:textSize="17sp" />
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrayContent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+        <TextView
+            android:id="@+id/tvArtCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_32"
+            android:textSize="10sp"
+            android:textColor="@color/colorTextGray"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp" />
+
+        <org.xiaoxingqi.shengxi.wedgit.GroupToggleView
+            android:id="@+id/headButton"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:background="@drawable/shape_bound_stroke_r_13_grey"
+            app:group_title="@array/canvas_me_title"
+            app:normal_size="12sp"
+            app:normal_width="62dp"
+            app:normal_color="@color/colorTextGray"
+            app:selector_color="@color/color_text_white"
+            app:slider_color="@color/color_switch_check"
+            android:layout_height="22dp" />
+
+    </RelativeLayout>
+
+    <org.xiaoxingqi.shengxi.wedgit.TransLayout
+        android:id="@+id/transLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultState="content"
+        app:emptyLayout="@layout/view_home_paint_empty"
+        app:offlineLayout="@layout/view_offline"
+        app:progressLayout="@layout/view_progress">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </org.xiaoxingqi.shengxi.wedgit.TransLayout>
+
+</LinearLayout>

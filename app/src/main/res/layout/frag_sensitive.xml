@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.xiaoxingqi.shengxi.wedgit.TransLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    app:progressLayout="@layout/view_progress"
+    app:offlineLayout="@layout/view_offline"
+    app:emptyLayout="@layout/view_empty"
+    android:id="@+id/transLayout"
+    app:defaultState="content"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorContentBackground">
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_height="32dp">
+
+            <EditText
+                android:id="@+id/etSensitive"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:background="@drawable/shape_r_16_gray"
+                android:singleLine="true"
+                android:layout_weight="1"
+                android:textCursorDrawable="@drawable/shape_edittext_cursor"
+                android:hint="敏感词请使用中英文逗号隔开"
+                android:textColor="@color/colorTextGray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加"
+                android:textSize="12sp"
+                android:textColor="@color/colorNormalIndecator"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/colorTextGray"
+                android:text="敏感词汇"
+                android:layout_marginLeft="15dp" />
+
+            <TextView
+                android:id="@+id/tvSave"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_width="62dp"
+                android:layout_height="19dp"
+                android:background="@drawable/shape_round_blue_r_10"
+                android:text="保存"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:fillViewport="true"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <org.xiaoxingqi.shengxi.wedgit.CustomFlowTables
+                    android:id="@+id/flow_tables"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+</org.xiaoxingqi.shengxi.wedgit.TransLayout>

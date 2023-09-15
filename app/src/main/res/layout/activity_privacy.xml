@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:contentInsetStart="0dp">
+
+            <ImageView
+                android:id="@+id/btn_Back"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="8dp"
+                android:padding="4dp"
+                android:src="@mipmap/icon_back" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/string_setting_1"
+                android:textColor="@color/colorNormalIndecator"
+                android:textSize="17sp" />
+
+
+            <RelativeLayout
+                android:id="@+id/relative_Custom"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right">
+
+                <TextView
+                    android:id="@+id/tv_Chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/iv_Custom"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="15dp"
+                    android:text="小二"
+                    android:textColor="@color/colorNormalIndecator"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/iv_Custom"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_user_custom" />
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrayContent" />
+
+    <org.xiaoxingqi.shengxi.wedgit.TransLayout
+        android:layout_width="match_parent"
+        android:id="@+id/transLayout"
+        app:defaultState="content"
+        app:emptyLayout="@layout/view_empty"
+        app:offlineLayout="@layout/view_offline"
+        app:progressLayout="@layout/view_progress"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorGrayContent"
+            android:orientation="vertical">
+
+            <org.xiaoxingqi.shengxi.wedgit.ViewMoreGroupView
+                android:id="@+id/moreReceived"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/colorContentBackground"
+                android:paddingLeft="2dp"
+                app:second_title="@string/string_PrivacyAct_1"
+                app:title_name="@string/string_PrivacyAct_6" />
+
+            <org.xiaoxingqi.shengxi.wedgit.ViewMoreGroupView
+                android:id="@+id/moreChat"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/colorContentBackground"
+                android:paddingLeft="2dp"
+                app:second_title="@string/string_PrivacyAct_1"
+                app:title_name="@string/string_PrivacyAct_7" />
+
+            <org.xiaoxingqi.shengxi.wedgit.ViewMoreGroupView
+                android:id="@+id/moreLight"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/colorContentBackground"
+                android:paddingLeft="2dp"
+                app:second_title="展示"
+                app:title_name="点亮" />
+
+            <org.xiaoxingqi.shengxi.wedgit.ViewMoreGroupView
+                android:id="@+id/viewVoices"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/colorContentBackground"
+                android:paddingLeft="2dp"
+                app:title_name="我的心情簿" />
+
+            <org.xiaoxingqi.shengxi.wedgit.ViewMoreGroupView
+                android:id="@+id/moreLocation"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="62dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/colorContentBackground"
+                android:paddingLeft="2dp"
+                app:second_title="@string/string_statue_off"
+                app:title_name="@string/string_PrivacyAct_9" />
+
+            <org.xiaoxingqi.shengxi.wedgit.ViewMoreGroupView
+                android:id="@+id/moreBlack"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/colorContentBackground"
+                android:paddingLeft="2dp"
+                app:title_name="@string/string_black_white_list" />
+
+            <org.xiaoxingqi.shengxi.wedgit.ViewMoreGroupView
+                android:id="@+id/viewListen"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/colorContentBackground"
+                android:paddingLeft="2dp"
+                app:title_name="@string/string_listen" />
+
+            <org.xiaoxingqi.shengxi.wedgit.ViewMoreGroupView
+                android:id="@+id/viewAchieve"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/colorContentBackground"
+                android:paddingLeft="2dp"
+                app:title_name="成就" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="bottom|center_horizontal"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tvRestore"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:layout_width="331dp"
+                    android:layout_height="42dp"
+                    android:text="恢复默认设置"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorTextGray"
+                    android:background="@mipmap/icon_about_me_button" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </org.xiaoxingqi.shengxi.wedgit.TransLayout>
+
+
+</LinearLayout>

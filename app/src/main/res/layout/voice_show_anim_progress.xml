@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeVoiceContainer"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_voice_dddddd_r_23">
+
+    <LinearLayout
+        android:id="@+id/linearVoice"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <org.xiaoxingqi.shengxi.wedgit.PlayWifiView
+            android:id="@+id/play"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            app:playColor="@color/color_b2b2b2" />
+
+        <View
+            android:id="@+id/progress"
+            android:layout_width="32dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="14dp"
+            android:ems="3"
+            android:gravity="end"
+            android:textColor="@color/color_b2b2b2"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/linearVoice"
+        android:layout_alignTop="@+id/linearVoice"
+        android:layout_alignEnd="@+id/linearVoice"
+        android:layout_alignBottom="@+id/linearVoice"
+        android:background="@drawable/shape_voices_progress_layer"
+        android:clickable="false"
+        android:focusable="false" />
+
+</RelativeLayout>

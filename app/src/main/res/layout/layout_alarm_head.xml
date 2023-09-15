@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/colorContentBackground"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_alarm_time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:includeFontPadding="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="07:00"
+        android:textSize="38dp"
+        android:textColor="@color/colorNormalIndecator" />
+
+    <ImageView
+        android:id="@+id/iv_edit_time"
+        android:layout_width="23dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="23dp"
+        android:layout_toRightOf="@+id/tv_alarm_time"
+        android:padding="5dp"
+        android:layout_alignBottom="@+id/tv_alarm_time"
+        android:layout_marginLeft="21dp"
+        android:src="@mipmap/icon_alarm_edit" />
+
+    <org.xiaoxingqi.shengxi.wedgit.ViewToggleAlarm
+        android:id="@+id/toggleAlarm"
+        android:layout_width="86dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="72dp"
+        android:layout_centerHorizontal="true"
+        app:toggleOnColor="@color/color_switch_check"
+        app:toggleOffColor="@color/colorGrayContent"
+        app:toggleOnIndicatorColor="@color/color_text_white"
+        app:toggleOffIndicatorColor="@color/color_switch_check"
+        app:toggleOffTextColor="@color/colorTextGray"
+        app:toggleOnTextColor="@color/color_text_white" />
+
+    <TextView
+        android:id="@+id/tvSetAlarm"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="115dp"
+        android:textSize="12sp"
+        android:textColor="@color/color_text_white"
+        android:gravity="center"
+        android:paddingLeft="39dp"
+        android:paddingRight="39dp"
+        android:background="@drawable/shape_blue_r_14"
+        android:text="@string/string_alarm_7"
+        android:layout_height="29dp" />
+
+    <RelativeLayout
+        android:layout_marginTop="178dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <org.xiaoxingqi.shengxi.wedgit.AlarmItemClickView
+            android:id="@+id/headItemClickView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <org.xiaoxingqi.shengxi.wedgit.GroupToggleView
+            android:id="@+id/headButton"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:background="@drawable/shape_bound_stroke_r_13_grey"
+            app:group_title="@array/alarm_me_title"
+            app:normal_size="12sp"
+            app:normal_width="62dp"
+            app:normal_color="@color/colorTextGray"
+            app:selector_color="@color/color_text_white"
+            app:slider_color="@color/color_switch_check"
+            android:layout_height="22dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

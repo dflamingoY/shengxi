@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.xiaoxingqi.shengxi.wedgit.TransLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/transLayout"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:emptyLayout="@layout/view_topic_empty"
+    app:progressLayout="@layout/view_progress"
+    app:offlineLayout="@layout/view_offline"
+    app:defaultState="content"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/colorContentBackground">
+
+        <TextView
+            android:id="@+id/tv_Count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/colorNormalIndecator"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvSort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:drawableRight="@mipmap/icon_arrow_down"
+            android:drawablePadding="9dp"
+            android:text="@string/string_new"
+            android:textColor="@color/colorNormalIndecator"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_marginTop="47dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:background="@color/colorContentBackground"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <org.xiaoxingqi.shengxi.wedgit.CustomPlayMenuView
+        android:id="@+id/customPlayMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</org.xiaoxingqi.shengxi.wedgit.TransLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="1dp"
+        android:paddingBottom="15dp"
+        android:background="@color/colorContentBackground"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="15dp"
+                android:id="@+id/cardLayout"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="14dp"
+                app:cardCornerRadius="17dp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:id="@+id/iv_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/icon_user_default" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_img_layer" />
+
+            </android.support.v7.widget.CardView>
+
+            <ImageView
+                android:id="@+id/iv_user_type"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_alignRight="@+id/cardLayout"
+                android:layout_alignBottom="@+id/cardLayout"
+                android:src="@drawable/selector_user_use_type"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_UserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/cardLayout"
+                android:layout_marginLeft="58dp"
+                android:layout_marginTop="1dp"
+                android:includeFontPadding="false"
+                android:textColor="@color/colorNormalIndecator"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_CountDown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/cardLayout"
+                android:layout_alignBottom="@+id/cardLayout"
+                android:layout_marginLeft="58dp"
+                android:layout_marginBottom="1dp"
+                android:includeFontPadding="false"
+                android:textColor="@color/colorTextGray"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/tv_Remark"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:visibility="gone"
+                android:paddingRight="15dp"
+                android:text="@string/string_remark"
+                android:textColor="@color/colorOtherBg"
+                android:textSize="12sp" />
+
+            <org.xiaoxingqi.shengxi.wedgit.skinView.SkinStatueText
+                android:layout_width="65dp"
+                android:gravity="center"
+                android:layout_height="20dp"
+                android:textSize="8sp"
+                android:visibility="gone"
+                android:text="@string/string_again_attention"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/color_b2b2b2"
+                app:statusTextSelected="@color/color_text_white"
+                android:background="@drawable/selector_attention_again" />
+
+            <LinearLayout
+                android:id="@+id/linearAgain"
+                android:paddingTop="15dp"
+                android:paddingBottom="5dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+
+                <org.xiaoxingqi.shengxi.wedgit.CustomCheckImageView
+                    android:layout_marginStart="15dp"
+                    android:id="@+id/customCheck"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    app:checkOn="@mipmap/icon_send_selected"
+                    app:checkOff="@mipmap/icon_send_normal" />
+
+                <TextView
+                    android:id="@+id/tvAgain"
+                    android:layout_marginStart="7dp"
+                    android:includeFontPadding="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_again_attention"
+                    android:textSize="10sp"
+                    android:textColor="@color/colorTextGray" />
+
+            </LinearLayout>
+
+            <org.xiaoxingqi.shengxi.wedgit.CustomCheckImageView
+                android:id="@+id/checkbox"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:visibility="gone"
+                app:checkOff="@mipmap/icon_friend_check_off"
+                app:checkOn="@mipmap/icon_friend_check_on" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_below="@+id/cardLayout"
+            android:layout_marginTop="7dp"
+            android:id="@+id/tvLianXu"
+            android:visibility="gone"
+            android:layout_marginLeft="58dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:layout_toRightOf="@+id/cardLayout"
+            android:textColor="@color/color_b2b2b2" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSend"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/string_23"
+        android:textColor="@color/colorOtherBg"
+        android:textSize="12sp" />
+
+</RelativeLayout>

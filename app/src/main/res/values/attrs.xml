@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <!-- 添加4个属性 -->
+        <attr name="pstsTabTextSize" format="dimension" />
+        <attr name="pstsTabTextColor" format="color" />
+
+        <attr name="pstsSelectedTabTextSize" format="dimension" />
+        <attr name="pstsSelectedTabTextColor" format="color" />
+        <attr name="pstsMargin" format="dimension" />
+        <!--选中状态颜色-->
+        <attr name="stateSelectedTextColor" format="color" />
+        <attr name="stateNormalTextColor" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CustomSeletcor">
+        <attr name="customSelectedColor" format="color" />
+        <attr name="customNormalColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="CustomRoundImageView">
+        <attr name="image_radius" format="dimension" />
+        <attr name="image_type">
+            <enum name="circle" value="0" />
+            <enum name="round" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="CircleView">
+        <attr name="circle_bg" format="color" />
+    </declare-styleable>
+    <declare-styleable name="ViewMoreGroupView">
+        <attr name="title_name" format="string" />
+        <attr name="title_img" format="reference" />
+        <attr name="title_selected" format="boolean" />
+        <attr name="title_size" format="integer" />
+        <attr name="second_Size" format="integer" />
+        <attr name="second_color" format="color" />
+        <attr name="show_arrow" format="boolean" />
+        <attr name="second_title" format="string" />
+        <attr name="privaty_Title" format="string" />
+        <attr name="title_icon" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="SwipeMenuLayout">
+        <attr name="leftViewId" format="reference" />
+        <attr name="rightViewId" format="reference" />
+        <attr name="contentViewId" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="EchoTypeView">
+        <attr name="echoImg" format="reference" />
+        <attr name="echoTitle" format="string" />
+        <attr name="echoesDefaultHint" format="string" />
+    </declare-styleable>
+    <declare-styleable name="CustomCheckImageView">
+        <attr name="checkState" format="boolean" />
+        <attr name="checkOn" format="reference" />
+        <attr name="checkOff" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="StatefulLayout">
+        <attr name="defaultState" format="enum">
+            <enum name="content" value="0" />
+            <enum name="progress" value="1" />
+            <enum name="offline" value="2" />
+            <enum name="empty" value="3" />
+        </attr>
+        <attr name="progressLayout" format="reference" />
+        <attr name="offlineLayout" format="reference" />
+        <attr name="emptyLayout" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="BorderEditText">
+        <attr name="border_Count" format="integer" />
+        <attr name="border_Width" format="integer" />
+        <attr name="border_Margin" format="integer" />
+        <attr name="border_radius" format="integer" />
+        <attr name="border_color" format="color" />
+
+    </declare-styleable>
+
+    <declare-styleable name="ToggleLayoutView">
+        <attr name="typeName" format="string" />
+        <attr name="text_color" format="color" />
+        <attr name="toggleState" format="boolean" />
+        <attr name="toggle_SecondTitle" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="StokenView">
+        <attr name="size_Type" format="enum">
+            <enum name="type_Squ" value="1" />
+            <enum name="type_Rect" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SelectRecommendView">
+
+        <attr name="selected_img_id" format="reference" />
+        <attr name="select_img_id" format="reference" />
+        <attr name="isSelected_img" format="boolean" />
+        <attr name="select_Title" format="string" />
+        <attr name="normalColor" format="color" />
+        <attr name="selectedColors" format="color" />
+
+    </declare-styleable>
+
+    <declare-styleable name="LinearStatusText">
+        <attr name="textNormalColor" format="color" />
+        <attr name="textSelectedColor" format="color" />
+        <attr name="textImgId" format="reference" />
+
+    </declare-styleable>
+
+    <declare-styleable name="SkinStatueText">
+        <attr name="statusTextSelected" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="MovieUserScoreView">
+
+        <attr name="scoreResid" format="reference" />
+        <attr name="scoreRanking" format="string" />
+        <attr name="imgSize" format="dimension" />
+        <attr name="margin_Bottom" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SwitchButton">
+        <attr name="sb_shadow_radius" format="reference|dimension" />
+        <attr name="sb_shadow_offset" format="reference|dimension" />
+        <attr name="sb_shadow_color" format="reference|color" />
+        <attr name="sb_uncheck_color" format="reference|color" />
+        <attr name="sb_checked_color" format="reference|color" />
+
+        <attr name="sb_border_width" format="reference|dimension" />
+        <attr name="sb_checkline_color" format="reference|color" />
+        <attr name="sb_checkline_width" format="reference|dimension" />
+        <attr name="sb_uncheckcircle_color" format="reference|color" />
+        <attr name="sb_uncheckcircle_width" format="reference|dimension" />
+        <attr name="sb_uncheckcircle_radius" format="reference|dimension" />
+
+        <attr name="sb_checked" format="reference|boolean" />
+        <attr name="sb_shadow_effect" format="reference|boolean" />
+        <attr name="sb_effect_duration" format="reference|integer" />
+        <attr name="sb_button_color" format="reference|color" />
+        <attr name="sb_show_indicator" format="reference|boolean" />
+        <attr name="sb_background" format="reference|color" />
+        <attr name="sb_enable_effect" format="reference|boolean" />
+        <attr name="sb_button_stroke_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="DiscreteScrollView">
+        <attr name="dsv_orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ViewIndicatorAlbum">
+        <attr name="selectedColor" format="color" />
+        <attr name="normalColorIndicator" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="BaseTabTitleLayout">
+        <attr name="arrayText" format="reference" />
+        <attr name="title_color" format="color" />
+        <attr name="title_select_color" format="color" />
+        <attr name="title_margin" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="CountdownView">
+        <attr name="isHideTimeBackground" format="boolean" />
+        <attr name="isShowTimeBgDivisionLine" format="boolean" />
+        <attr name="timeBgDivisionLineColor" format="color" />
+        <attr name="timeBgDivisionLineSize" format="dimension" />
+        <attr name="timeBgColor" format="color" />
+        <attr name="timeBgSize" format="dimension" />
+        <attr name="timeBgRadius" format="dimension" />
+
+        <attr name="isTimeTextBold" format="boolean" />
+        <attr name="timeTextSize" format="dimension" />
+        <attr name="timeTextColor" format="color" />
+        <attr name="isShowDay" format="boolean" />
+        <attr name="isShowHour" format="boolean" />
+        <attr name="isShowMinute" format="boolean" />
+        <attr name="isShowSecond" format="boolean" />
+        <attr name="isShowMillisecond" format="boolean" />
+        <attr name="isConvertDaysToHours" format="boolean" />
+
+        <attr name="isSuffixTextBold" format="boolean" />
+        <attr name="suffixTextSize" format="dimension" />
+        <attr name="suffixTextColor" format="color" />
+        <attr name="suffix" format="string" />
+        <attr name="suffixDay" format="string" />
+        <attr name="suffixHour" format="string" />
+        <attr name="suffixMinute" format="string" />
+        <attr name="suffixSecond" format="string" />
+        <attr name="suffixMillisecond" format="string" />
+        <attr name="suffixGravity">
+            <enum name="top" value="0" />
+            <enum name="center" value="1" />
+            <enum name="bottom" value="2" />
+        </attr>
+        <attr name="suffixLRMargin" format="dimension" />
+        <attr name="suffixDayLeftMargin" format="dimension" />
+        <attr name="suffixDayRightMargin" format="dimension" />
+        <attr name="suffixHourLeftMargin" format="dimension" />
+        <attr name="suffixHourRightMargin" format="dimension" />
+        <attr name="suffixMinuteLeftMargin" format="dimension" />
+        <attr name="suffixMinuteRightMargin" format="dimension" />
+        <attr name="suffixSecondLeftMargin" format="dimension" />
+        <attr name="suffixSecondRightMargin" format="dimension" />
+        <attr name="suffixMillisecondLeftMargin" format="dimension" />
+
+        <attr name="isShowTimeBgBorder" format="boolean" />
+        <attr name="timeBgBorderColor" format="color" />
+        <attr name="timeBgBorderSize" format="dimension" />
+        <attr name="timeBgBorderRadius" format="dimension" />
+
+    </declare-styleable>
+
+    <declare-styleable name="GradientTextView">
+        <attr name="startColor" format="color" />
+        <attr name="endColor" format="color" />
+        <attr name="centerColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="StrokeTextView">
+        <attr name="strokeWidth" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="VoiceProgress">
+        <attr name="reStartLeftId" format="reference" />
+        <attr name="reStartRightId" format="reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ViewSeekProgress">
+        <attr name="wrap_radius" format="dimension" />
+        <attr name="mask_color" format="color" />
+        <attr name="progress_intercept" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="BorderStrokeEditText">
+        <attr name="strokeColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleColorSelectorView">
+        <attr name="circle_color" format="color" />
+        <attr name="circle_padding" format="dimension" />
+        <attr name="circle_shadow_color" format="color" />
+        <attr name="circle_padding_color" format="color" />
+        <attr name="circle_layer_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ViewUserIdentity">
+
+        <attr name="identity_cover" format="reference" />
+        <attr name="identity_title" format="string" />
+        <attr name="identity_desc" format="string" />
+
+    </declare-styleable>
+
+    <declare-styleable name="TabLayoutView">
+
+
+    </declare-styleable>
+
+
+    <declare-styleable name="CustomEditText">
+
+        <attr name="customWidth" format="dimension" />
+        <attr name="customMargin" format="dimension" />
+        <attr name="customCount" format="integer" />
+        <attr name="customRadius" format="dimension" />
+
+    </declare-styleable>
+
+    <declare-styleable name="CoverLayerView">
+        <attr name="scale_rate" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="GroupToggleView">
+        <attr name="group_title" format="reference" />
+        <attr name="selector_color" format="color" />
+        <attr name="normal_color" format="color" />
+        <attr name="normal_width" format="dimension" />
+        <attr name="normal_size" format="dimension" />
+        <attr name="slider_color" format="color" />
+        <attr name="stateGroupSelectedTextColor" format="color" />
+        <attr name="stateGroupNormalTextColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ViewToggleAlarm">
+        <attr name="toggleOnColor" format="color" />
+        <attr name="toggleOffColor" format="color" />
+        <attr name="toggleOnIndicatorColor" format="color" />
+        <attr name="toggleOffIndicatorColor" format="color" />
+        <attr name="toggleOnTextColor" format="color" />
+        <attr name="toggleOffTextColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="NumberPickerView">
+        <!--set number of item displayed, default is 3-->
+        <attr name="npv_ShownCount" format="reference|integer" />
+        <!--set if show divider, default is true-->
+        <attr name="npv_ShowDivider" format="reference|boolean" />
+        <attr name="npv_DividerColor" format="reference|color" />
+        <attr name="npv_DividerMarginLeft" format="reference|dimension" />
+        <attr name="npv_DividerMarginRight" format="reference|dimension" />
+        <attr name="npv_DividerHeight" format="reference|dimension" />
+        <attr name="npv_TextColorNormal" format="reference|color" />
+        <attr name="npv_TextColorSelected" format="reference|color" />
+        <attr name="npv_TextColorHint" format="reference|color" />
+        <attr name="npv_TextSizeNormal" format="reference|dimension" />
+        <attr name="npv_TextSizeSelected" format="reference|dimension" />
+        <attr name="npv_TextSizeHint" format="reference|dimension" />
+        <attr name="npv_TextArray" format="reference" />
+        <attr name="npv_MinValue" format="reference|integer" />
+        <attr name="npv_MaxValue" format="reference|integer" />
+        <attr name="npv_WrapSelectorWheel" format="reference|boolean" />
+        <attr name="npv_RespondChangeOnDetached" format="reference|boolean" />
+        <attr name="npv_HintText" format="reference|string" />
+        <attr name="npv_EmptyItemHint" format="reference|string" />
+        <attr name="npv_MarginStartOfHint" format="reference|dimension" />
+        <attr name="npv_MarginEndOfHint" format="reference|dimension" />
+        <attr name="npv_ItemPaddingHorizontal" format="reference|dimension" />
+        <attr name="npv_ItemPaddingVertical" format="reference|dimension" />
+        <attr name="npv_RespondChangeInMainThread" format="reference|boolean" />
+        <attr name="npv_TextEllipsize" format="reference|string" />
+
+        <!--just used to measure maxWidth for wrap_content without hint,
+            the string array will never be displayed.
+            you can set this attr if you want to keep the wraped numberpickerview
+            width unchanged when alter the content list-->
+        <attr name="npv_AlternativeTextArrayWithMeasureHint" format="reference" />
+        <attr name="npv_AlternativeTextArrayWithoutMeasureHint" format="reference" />
+        <!--the max length of hint content-->
+        <attr name="npv_AlternativeHint" format="reference|string" />
+    </declare-styleable>
+
+    <declare-styleable name="CalendarMonthView">
+
+        <attr name="weekend_color" format="color" />
+        <attr name="workDay_color" format="color" />
+        <attr name="selected_color" format="color" />
+        <attr name="selectedCircle_color" format="color" />
+        <attr name="splitLine_color" format="color" />
+
+    </declare-styleable>
+
+    <declare-styleable name="ProgressSeekBar">
+        <attr name="progress_skin_drawable" format="reference" />
+        <attr name="progress_skin_thumb" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleCountDown">
+        <attr name="circleStrokeWidth" format="dimension" />
+        <attr name="circleLowerColor" format="color" />
+        <attr name="circleTopLayerColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="AlarmItemClickView">
+        <attr name="all_tab_visible" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ColorArraysTextView">
+        <attr name="colorArrays_1" format="color" />
+        <attr name="colorArrays_2" format="color" />
+        <attr name="colorArrays_3" format="color" />
+        <attr name="colorArrays_4" format="color" />
+        <attr name="colorArrays_5" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CheersProgress">
+        <attr name="cheersBackground" format="color" />
+        <attr name="cheerRotation" format="color" />
+        <attr name="cheerWidth" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RectPlayView">
+        <attr name="playWidth" format="dimension" />
+        <attr name="playColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CartoonProgress">
+        <attr name="cartoon_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="GroupChildView">
+        <attr name="layer_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="HeartWaveView">
+        <attr name="heart_background" format="reference" />
+        <attr name="heart_color" format="color" />
+    </declare-styleable>
+</resources>

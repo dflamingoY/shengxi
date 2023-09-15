@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="100dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_achievement_dialog" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/stateImageView"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_width="21dp"
+        android:layout_marginLeft="19dp"
+        android:src="@drawable/selector_achieve_logo"
+        android:layout_height="21dp" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvAchieveType"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/color_FF9D00_to_B36E00"
+        android:includeFontPadding="false"
+        android:layout_marginRight="19dp"
+        android:text="@string/string_achievement_success" />
+
+</LinearLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.xiaoxingqi.shengxi.wedgit.TransLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/transLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:defaultState="progress"
+    app:emptyLayout="@layout/view_empty"
+    app:offlineLayout="@layout/view_offline"
+    app:progressLayout="@layout/view_progress">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorContentBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_voice_style_setting_1"
+                android:textSize="20sp"
+                android:includeFontPadding="false"
+                android:textColor="@color/color_999999_to_b2b2b2"
+                android:layout_marginTop="9dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="18dp"
+                android:includeFontPadding="false"
+                android:textColor="@color/color_special_text_grey"
+                android:text="@string/string_voice_style_setting_2" />
+
+            <LinearLayout
+                android:id="@+id/linearCoverLight"
+                android:layout_width="match_parent"
+                android:layout_marginTop="14dp"
+                android:layout_height="wrap_content">
+
+                <org.xiaoxingqi.shengxi.wedgit.HorizontalCircleTextLayout
+                    android:id="@+id/circleLayoutGray"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="43dp"
+                    android:layout_height="wrap_content"
+                    app:typeName="@string/string_voice_style_setting_3"
+                    app:toggleState="true" />
+
+                <org.xiaoxingqi.shengxi.wedgit.HorizontalCircleTextLayout
+                    android:id="@+id/circleLayoutOriginal"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="72dp"
+                    android:layout_height="wrap_content"
+                    app:typeName="@string/string_voice_style_setting_4" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="19dp"
+                android:includeFontPadding="false"
+                android:textColor="@color/color_special_text_grey"
+                android:text="@string/string_voice_style_setting_5" />
+
+            <LinearLayout
+                android:id="@+id/linearScenes1"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content">
+
+                <org.xiaoxingqi.shengxi.wedgit.HorizontalCircleTextLayout
+                    android:id="@+id/circleEmpty"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="43dp"
+                    android:layout_height="wrap_content"
+                    app:typeName="无"
+                    app:toggleState="true" />
+
+                <org.xiaoxingqi.shengxi.wedgit.HorizontalCircleTextLayout
+                    android:id="@+id/circleRain"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="72dp"
+                    android:layout_height="wrap_content"
+                    app:typeName="雨" />
+
+                <org.xiaoxingqi.shengxi.wedgit.HorizontalCircleTextLayout
+                    android:id="@+id/circleSnow"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="72dp"
+                    android:layout_height="wrap_content"
+                    app:typeName="雪" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearScenes2"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content">
+
+                <org.xiaoxingqi.shengxi.wedgit.HorizontalCircleTextLayout
+                    android:id="@+id/circleLeaves"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="43dp"
+                    android:layout_height="wrap_content"
+                    app:typeName="叶" />
+
+                <org.xiaoxingqi.shengxi.wedgit.HorizontalCircleTextLayout
+                    android:id="@+id/circleFlowers"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="72dp"
+                    android:layout_height="wrap_content"
+                    app:typeName="花" />
+
+                <org.xiaoxingqi.shengxi.wedgit.HorizontalCircleTextLayout
+                    android:id="@+id/circleMaple"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="72dp"
+                    android:layout_height="wrap_content"
+                    app:typeName="枫" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="19dp"
+                android:includeFontPadding="false"
+                android:textColor="@color/color_special_text_grey"
+                android:text="@string/string_voice_style_setting_6" />
+
+            <LinearLayout
+                android:id="@+id/linearMiniMachine"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content">
+
+                <org.xiaoxingqi.shengxi.wedgit.HorizontalCircleTextLayout
+                    android:id="@+id/circleMiniMachineSelf"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="43dp"
+                    android:layout_height="wrap_content"
+                    app:typeName="@string/string_voice_style_setting_7"
+                    app:toggleState="true" />
+
+                <org.xiaoxingqi.shengxi.wedgit.HorizontalCircleTextLayout
+                    android:id="@+id/circleMiniMachineOpen"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:layout_height="wrap_content"
+                    app:typeName="@string/string_voice_style_setting_8" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="19dp"
+                android:includeFontPadding="false"
+                android:textColor="@color/color_special_text_grey"
+                android:text="@string/string_voice_style_setting_9" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerCover"
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_width="match_parent"
+                android:minHeight="210dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvSave"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:textSize="14sp"
+                android:textColor="@color/color_text_white"
+                android:layout_width="98dp"
+                android:layout_height="37dp"
+                android:layout_marginBottom="22dp"
+                android:text="@string/string_save"
+                android:background="@drawable/shape_blue_r_20" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</org.xiaoxingqi.shengxi.wedgit.TransLayout>

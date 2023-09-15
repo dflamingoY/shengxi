@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeVoiceContainer"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_voice_bg">
+
+    <org.xiaoxingqi.shengxi.wedgit.ViewSeekProgress
+        android:id="@+id/viewSeekProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearVoice"
+        android:layout_alignTop="@+id/linearVoice"
+        android:layout_alignRight="@+id/linearVoice"
+        android:layout_alignBottom="@+id/linearVoice"
+        android:max="1000"
+        android:progress="0"
+        app:mask_color="@color/colorIndecators"
+        app:wrap_radius="23dp" />
+
+    <LinearLayout
+        android:id="@+id/linearVoice"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <org.xiaoxingqi.shengxi.wedgit.PlayWifiView
+            android:id="@+id/play"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp" />
+
+        <View
+            android:id="@+id/progress"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="14dp"
+            android:gravity="end"
+            android:textColor="@android:color/white"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/linearVoice"
+        android:layout_alignTop="@+id/linearVoice"
+        android:layout_alignEnd="@+id/linearVoice"
+        android:layout_alignBottom="@+id/linearVoice"
+        android:background="@drawable/shape_voices_progress_layer"
+        android:clickable="false"
+        android:focusable="false" />
+
+</RelativeLayout>

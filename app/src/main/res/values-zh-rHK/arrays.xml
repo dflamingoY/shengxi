@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arrayAlarm">
+        <item>全部</item>
+        <item>為你</item>
+    </string-array>
+    <string-array name="arrayWorldTitle">
+        <item>全部</item>
+        <item>你是誰</item>
+    </string-array>
+
+</resources>

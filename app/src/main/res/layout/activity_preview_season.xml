@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorContentBackground">
+
+    <LinearLayout
+        android:id="@+id/linear_top"
+        android:layout_width="match_parent"
+        android:layout_height="111dp"
+        android:background="@color/color_323232"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingExtra="6dp"
+            android:text="@string/string_preview_season_top_1"
+            android:textColor="@color/color_f6f6f6"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <org.xiaoxingqi.shengxi.wedgit.TransLayout
+        android:id="@+id/transLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relativeOut"
+        android:layout_below="@+id/linear_top"
+        android:layout_marginTop="19dp"
+        app:defaultState="content"
+        app:emptyLayout="@layout/view_empty_preview"
+        app:offlineLayout="@layout/view_offline"
+        app:progressLayout="@layout/view_progress">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </org.xiaoxingqi.shengxi.wedgit.TransLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeOut"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_323232">
+
+        <TextView
+            android:id="@+id/tv_out_preview"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/shape_stroke_r_21_cccccc"
+            android:gravity="center"
+            android:text="退出预览"
+            android:textColor="@color/color_f6f6f6"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

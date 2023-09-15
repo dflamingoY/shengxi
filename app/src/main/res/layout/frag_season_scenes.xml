@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.xiaoxingqi.shengxi.wedgit.TransLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/transLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrayContent"
+    app:emptyLayout="@layout/view_empty_preview"
+    app:offlineLayout="@layout/view_offline"
+    app:progressLayout="@layout/view_progress">
+
+    <LinearLayout
+        android:id="@+id/nested_self"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGrayContent"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clipChildren="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/string_default_empty_season_8"
+                    android:textColor="@color/colorNormalIndecator"
+                    android:textSize="15sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_public"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:clipChildren="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="29dp"
+                    android:text="@string/string_default_empty_season_10"
+                    android:textColor="@color/colorNormalIndecator"
+                    android:textSize="15sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_friends"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:clipChildren="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="29dp"
+                    android:text="@string/string_default_empty_season_11"
+                    android:textColor="@color/colorNormalIndecator"
+                    android:textSize="15sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_privacy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:clipChildren="false" />
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <RelativeLayout
+            android:id="@+id/relative_preview"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="13dp"
+            android:background="@mipmap/icon_season_preview">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/string_default_empty_season_12"
+                android:textColor="@color/colorTextGray"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_add_album"
+        android:layout_width="80dp"
+        android:layout_height="24dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/shape_bound_white_r_10"
+        android:gravity="center"
+        android:text="@string/string_default_empty_season_9"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:id="@+id/relative_other"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGrayContent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_other_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="29dp"
+            android:textColor="@color/colorNormalIndecator"
+            android:textSize="15sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_other_count"
+            android:layout_marginTop="9dp"
+            android:clipChildren="false" />
+
+        <include
+            android:id="@+id/layout_empty"
+            layout="@layout/view_empty_preview"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/relative_stranger"
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorContentBackground"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/tv_stranger_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/string_visible_album"
+                android:textColor="@color/colorText666666"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_Friend"
+                android:layout_width="192dp"
+                android:layout_height="42dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/selector_voice_add_friends"
+                android:gravity="center"
+                android:text="+好友"
+                android:textColor="@color/color_text_white"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</org.xiaoxingqi.shengxi.wedgit.TransLayout>

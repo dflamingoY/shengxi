@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.xiaoxingqi.shengxi.wedgit.swiprecycler.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeMenu"
+    android:layout_width="match_parent"
+    android:layout_height="67dp"
+    android:animateLayoutChanges="true"
+    app:contentViewId="@id/relativeContent"
+    app:rightViewId="@id/linearRight">
+
+    <RelativeLayout
+        android:id="@+id/relativeContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorContentBackground">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardlayout"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="9dp"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="0dp">
+
+            <ImageView
+                android:id="@+id/roundCircle"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:scaleType="centerCrop" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_img_layer" />
+
+        </android.support.v7.widget.CardView>
+
+        <ImageView
+            android:id="@+id/iv_user_type"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_alignRight="@+id/cardlayout"
+            android:layout_alignBottom="@+id/cardlayout"
+            android:src="@drawable/selector_user_use_type"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivOfficial"
+            android:layout_width="14dp"
+            android:visibility="gone"
+            android:layout_height="14dp"
+            android:layout_alignRight="@+id/cardlayout"
+            android:layout_alignBottom="@+id/cardlayout"
+            android:src="@mipmap/icon_offical_logo" />
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/cardlayout"
+            android:includeFontPadding="false"
+            android:textColor="@color/colorNormalIndecator"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_ChatType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvUserName"
+            android:layout_marginTop="38dp"
+            android:includeFontPadding="false"
+            android:text="@string/string_echoes_type_1"
+            android:textColor="@color/colorTextGray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_toRightOf="@+id/tv_ChatType"
+            android:id="@+id/tvTopicType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="38dp"
+            android:includeFontPadding="false"
+            android:text="@string/string_echo_forget_pwd"
+            android:textColor="#FB5C57"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="14dp"
+            android:textColor="@color/colorTextGray"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/viewLine"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="11dp"
+            android:layout_toRightOf="@+id/cardlayout"
+            android:background="@color/color_Dividing" />
+
+
+        <TextView
+            android:id="@+id/tv_Count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/shape_unread_count"
+            android:includeFontPadding="false"
+            android:paddingLeft="7dp"
+            android:paddingTop="3dp"
+            android:paddingRight="7dp"
+            android:paddingBottom="3dp"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearRight"
+        android:layout_width="172dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_Report"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_delete"
+            android:gravity="center"
+            android:text="@string/string_report_normal"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_Delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#fffb5c57"
+            android:gravity="center"
+            android:text="@string/string_statue_off"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+</org.xiaoxingqi.shengxi.wedgit.swiprecycler.SwipeMenuLayout>

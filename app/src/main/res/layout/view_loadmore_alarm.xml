@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorContentBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearProgress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:indeterminateTint="@color/colorIndecators"
+            android:indeterminateTintMode="src_atop"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/text_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="3dp"
+            android:textColor="@color/colorNormalIndecator"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_Empty"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relativeDownload"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginTop="46dp"
+                android:id="@+id/iv_empty_down_alarm"
+                android:layout_width="123dp"
+                android:layout_height="137dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/icon_alarm_download_empty" />
+
+            <TextView
+                android:id="@+id/tvFindMore"
+                android:layout_below="@+id/iv_empty_down_alarm"
+                android:layout_marginTop="31dp"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:gravity="center"
+                android:text="发现配音设为闹铃"
+                android:includeFontPadding="false"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:textSize="13sp"
+                android:background="@drawable/shape_gradent_alarm_red_r_20"
+                android:textColor="@color/color_text_white"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/relativeMy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardLayout"
+                android:layout_width="40dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="15dp"
+                app:cardBackgroundColor="#00ffffff"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                android:layout_height="40dp">
+
+                <ImageView
+                    android:id="@+id/ivUserLogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_night_white_transparent" />
+
+            </android.support.v7.widget.CardView>
+
+            <ImageView
+                android:id="@+id/ivUserType"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_alignRight="@+id/cardLayout"
+                android:layout_alignBottom="@+id/cardLayout"
+                android:src="@drawable/selector_user_use_type"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_alignTop="@+id/cardLayout"
+                android:layout_alignBottom="@+id/cardLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/cardLayout"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/color_dddddd_to_3e3e4a" />
+
+            <TextView
+                android:id="@+id/tvMoreDubbing"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="69dp"
+                android:background="@drawable/shape_stroke_r_8_blue"
+                android:text="@string/string_alarm_my_empty_hint"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/colorIndecators" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

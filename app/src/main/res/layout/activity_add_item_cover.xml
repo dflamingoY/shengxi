@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.xiaoxingqi.shengxi.wedgit.TransLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/transLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:defaultState="content"
+    app:emptyLayout="@layout/view_empty"
+    app:offlineLayout="@layout/view_offline"
+    app:progressLayout="@layout/view_progress">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_user_avatar_bg"
+        android:clipChildren="false">
+
+        <org.xiaoxingqi.shengxi.wedgit.SqureRelativeLayout
+            android:id="@+id/cropView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:clickable="false"
+            android:clipChildren="false"
+            android:focusable="false">
+
+            <org.xiaoxingqi.shengxi.wedgit.TouchImageView
+                android:id="@+id/touchImg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+        </org.xiaoxingqi.shengxi.wedgit.SqureRelativeLayout>
+
+        <org.xiaoxingqi.shengxi.wedgit.CoverLayerView
+            android:id="@+id/layerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:clickable="false"
+            android:focusable="false"
+            app:scale_rate="0.72" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:id="@+id/tv_Cancel"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:padding="5dp"
+                android:src="@mipmap/icon_toast_close" />
+
+            <ImageView
+                android:id="@+id/tv_Commit"
+                android:layout_width="27dp"
+                android:layout_height="22dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="3dp"
+                android:src="@mipmap/icon_cover_submit" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</org.xiaoxingqi.shengxi.wedgit.TransLayout>

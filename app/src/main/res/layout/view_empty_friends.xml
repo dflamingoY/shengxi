@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorContentBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="172dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/draw_empty_photo_other" />
+
+    <ImageView
+        android:id="@+id/tv_friends_hint_1"
+        android:layout_width="197dp"
+        android:layout_height="39dp"
+        android:visibility="gone"
+        android:src="@drawable/selector_friends_empty_list"
+        android:layout_marginTop="41dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_Nearby"
+            android:layout_width="192dp"
+            android:layout_height="42dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_voice_bg"
+            android:gravity="center"
+            android:text="@string/string_moodList_friends_i_2"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_Nearby"
+            android:layout_alignTop="@+id/tv_Nearby"
+            android:layout_alignEnd="@+id/tv_Nearby"
+            android:layout_alignBottom="@+id/tv_Nearby"
+            android:background="@drawable/shape_r23_layer"
+            android:clickable="false"
+            android:focusable="false" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

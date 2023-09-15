@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="151dp"
+    android:layout_height="61dp"
+    android:background="@drawable/icon_dialog_select_pen">
+
+    <ImageView
+        android:id="@+id/iv_pen_size_1"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/selector_pen_size_1" />
+
+    <ImageView
+        android:id="@+id/iv_pen_size_2"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/selector_pen_size_2" />
+
+    <ImageView
+        android:id="@+id/iv_pen_size_3"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/selector_pen_size_3" />
+
+    <ImageView
+        android:id="@+id/iv_pen_size_4"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/selector_pen_size_4" />
+
+    <ImageView
+        android:id="@+id/iv_pen_size_5"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/selector_pen_size_5" />
+
+
+</LinearLayout>

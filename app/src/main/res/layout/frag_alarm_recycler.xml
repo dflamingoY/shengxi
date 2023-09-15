@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorContentBackground">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <!--<RelativeLayout
+        android:id="@+id/relativeTop"
+        android:background="@color/colorContentBackground"
+        android:visibility="gone"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <org.xiaoxingqi.shengxi.wedgit.AlarmItemClickView
+            android:id="@+id/alarmItemClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <org.xiaoxingqi.shengxi.wedgit.GroupToggleView
+            android:id="@+id/toggle_attention"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:background="@drawable/shape_bound_stroke_r_13_grey"
+            app:group_title="@array/alarm_me_title"
+            app:normal_size="12sp"
+            app:normal_width="62dp"
+            app:normal_color="@color/colorTextGray"
+            app:selector_color="@color/color_text_white"
+            app:slider_color="@color/color_switch_check"
+            android:layout_height="22dp" />
+
+    </RelativeLayout>-->
+
+    <org.xiaoxingqi.shengxi.wedgit.CustomPlayMenuView
+        android:id="@+id/customPlayMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:id="@+id/viewTopDividing"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/draw_alarm_split_line" />
+
+</FrameLayout>

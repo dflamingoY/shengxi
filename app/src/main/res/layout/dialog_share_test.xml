@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/colorGrayContent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_ShareWechat"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/colorContentBackground"
+        android:gravity="center"
+        android:text="分享到微信"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_ShareWeibo"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorContentBackground"
+        android:gravity="center"
+        android:text="分享到微博"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_ShareQQ"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorContentBackground"
+        android:gravity="center"
+        android:text="分享到QQ"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_CreatePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorContentBackground"
+        android:gravity="center"
+        android:text="生成截图"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_Cancel"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorContentBackground"
+        android:gravity="center"
+        android:text="@string/string_cancel"
+        android:textColor="@color/colorTextGray"
+        android:textSize="15sp" />
+
+</LinearLayout>

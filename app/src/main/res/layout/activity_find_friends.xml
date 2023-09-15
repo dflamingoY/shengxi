@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.xiaoxingqi.shengxi.wedgit.TransLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/transLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:defaultState="progress"
+    app:emptyLayout="@layout/view_empty"
+    app:offlineLayout="@layout/view_offline"
+    app:progressLayout="@layout/view_progress">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/draw_find_bg" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_img_layer" />
+
+    <LinearLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view_status_bar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="42dp">
+
+            <ImageView
+                android:id="@+id/btn_Back"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="8dp"
+                android:padding="4dp"
+                android:src="@mipmap/icon_white__back" />
+
+            <TextView
+                android:id="@+id/tv_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/string_find_friends_6"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/ivSearchHint"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="15dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/icon_find_search"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:clipChildren="false"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="5dp">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardLayout"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:cardElevation="0dp"
+                    android:layout_centerInParent="true"
+                    app:cardCornerRadius="50dp"
+                    app:cardBackgroundColor="#00ffffff">
+
+                    <ImageView
+                        android:id="@+id/iv_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/shape_circle_orange"
+                        android:scaleType="centerCrop" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shape_circle_layer" />
+                </android.support.v7.widget.CardView>
+
+                <ImageView
+                    android:id="@+id/iv_user_type"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignRight="@+id/cardLayout"
+                    android:layout_alignBottom="@+id/cardLayout"
+                    android:src="@drawable/selector_user_use_type"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvEmptyFind"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_17"
+                android:textSize="14sp"
+                android:textColor="@color/color_text_white"
+                android:layout_marginTop="160dp"
+                android:layout_gravity="center_horizontal" />
+
+            <LinearLayout
+                android:id="@+id/linearNameInfo"
+                android:layout_width="240dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="160dp"
+                android:background="@drawable/shape_r_3_white_alpha_80"
+                android:layout_height="25dp">
+
+                <TextView
+                    android:id="@+id/tvUserName"
+                    android:textSize="14sp"
+                    android:textColor="#333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false" />
+
+                <TextView
+                    android:layout_marginStart="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:textSize="14sp"
+                    android:text="查看>"
+                    android:textColor="#333" />
+
+            </LinearLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tvSmiler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/string_8"
+                android:textSize="14sp"
+                android:layout_marginTop="210dp"
+                android:textColor="@color/color_white_2_b2b2b2" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="@string/string_find_friends_4_1"
+            android:textColor="@color/color_white_2_b2b2b2"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:id="@+id/linearContainer"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="226dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivAddWord"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/icon_find_add_word" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvFind"
+            android:layout_marginTop="28dp"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:text="@string/string_find_friends_6"
+            android:background="@drawable/shape_r_20_white_alpha_80"
+            android:textSize="17sp"
+            android:textColor="#333"
+            android:gravity="center"
+            android:layout_marginBottom="120dp"
+            android:layout_gravity="center_horizontal|bottom" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/shape_find_bottom_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/string_find_friends_7"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <org.xiaoxingqi.shengxi.wedgit.SwitchButton
+            android:id="@+id/toggle_Button"
+            android:layout_width="52dp"
+            android:layout_height="31dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:clickable="false"
+            android:focusable="false"
+            app:sb_background="#99ffffff"
+            app:sb_button_color="#99ffffff"
+            app:sb_button_stroke_color="#99e5e5e5"
+            app:sb_checked="true"
+            app:sb_checked_color="#9946cdcf"
+            app:sb_shadow_color="#99ffffff"
+            app:sb_shadow_effect="false"
+            app:sb_show_indicator="false"
+            app:sb_uncheck_color="#00ffffff" />
+
+    </RelativeLayout>
+
+</org.xiaoxingqi.shengxi.wedgit.TransLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <org.xiaoxingqi.shengxi.wedgit.TransLayout
+        android:id="@+id/transLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultState="content"
+        app:emptyLayout="@layout/view_empty_voice_list"
+        app:offlineLayout="@layout/view_offline"
+        app:progressLayout="@layout/view_progress">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/coordinator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorGrayContent">
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipeRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_operator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/colorContentBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="gone"
+                app:layout_behavior="com.lauzy.freedom.lbehaviorlib.behavior.BottomBehavior">
+
+                <RelativeLayout
+                    android:id="@+id/relativeInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_FirstTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/colorNormalIndecator"
+                        android:textSize="12sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_SecondTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="39dp"
+                        android:textColor="@color/colorTextGray"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="86dp"
+                        android:text="@string/string_start_record"
+                        android:textColor="@color/color_special_text_grey" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrayContent" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/relativeAddFriend"
+                    android:layout_width="match_parent"
+                    android:layout_height="138dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_stranger_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="22dp"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="3dp"
+                        android:text="@string/string_empty_voice_list_22"
+                        android:textColor="@color/colorText666666"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_Friend"
+                        android:layout_width="192dp"
+                        android:layout_height="42dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="80dp"
+                        android:background="@drawable/selector_voice_add_friends"
+                        android:gravity="center"
+                        android:text="+好友"
+                        android:textColor="@color/color_text_white"
+                        android:textSize="13sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrayContent" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </android.support.design.widget.CoordinatorLayout>
+    </org.xiaoxingqi.shengxi.wedgit.TransLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+</LinearLayout>

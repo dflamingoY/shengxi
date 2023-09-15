@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:background="@color/colorContentBackground"
+    android:layout_height="50dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_marginStart="15dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:cardBackgroundColor="#00ffffff"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="15dp">
+
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_img_layer" />
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:textSize="14sp"
+        android:textColor="@color/colorNormalIndecator"
+        android:layout_marginStart="16dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/tvAchieveDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:includeFontPadding="false"
+        android:textSize="14sp"
+        android:textColor="@color/color_FFA77B_to_B37556" />
+
+</LinearLayout>

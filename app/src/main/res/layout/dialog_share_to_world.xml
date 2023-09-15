@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="48dp"
+    android:layout_marginRight="48dp"
+    android:background="@drawable/shape_white_r_14"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="@string/string_voice_push_success"
+        android:textColor="#202020"
+        android:textSize="22sp" />
+
+    <ImageView
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="29dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/icon_share_to_world_hint" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_horizontal"
+        android:text="是否共享到世界"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/string_open_you_voices"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/tv_Commit"
+        android:layout_width="110dp"
+        android:layout_height="36dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/shape_blue_round_18"
+        android:gravity="center"
+        android:text="@string/string_share_world"
+        android:textColor="@color/color_text_white"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@+id/tv_Commit"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="保持神秘"
+        android:textColor="@color/color_b2b2b2"
+        android:textSize="12sp" />
+
+
+</LinearLayout>

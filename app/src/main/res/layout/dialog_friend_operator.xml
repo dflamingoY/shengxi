@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:layout_marginBottom="-12dp"
+    app:cardCornerRadius="11dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/colorGrayContent"
+        android:orientation="vertical">
+
+        <!--超管操作用户-->
+
+        <LinearLayout
+            android:id="@+id/linear_operator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_admin_warn"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginBottom="1dp"
+                android:background="@color/colorContentBackground"
+                android:gravity="center"
+                android:text="@string/string_admin_warn"
+                android:textColor="@color/colorNormalIndecator"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_admin_limit"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginBottom="1dp"
+                android:background="@color/colorContentBackground"
+                android:gravity="center"
+                android:text="@string/string_admin_limit"
+                android:textColor="@color/colorNormalIndecator"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_admin_injury"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginBottom="1dp"
+                android:background="@color/colorContentBackground"
+                android:gravity="center"
+                android:text="@string/string_admin_injury"
+                android:textColor="@color/colorNormalIndecator"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_admin_close"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginBottom="1dp"
+                android:background="@color/colorContentBackground"
+                android:gravity="center"
+                android:text="@string/string_admin_close"
+                android:textColor="@color/colorNormalIndecator"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_Remark"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/colorContentBackground"
+            android:gravity="center"
+            android:text="@string/string_remark"
+            android:textColor="@color/colorNormalIndecator"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_AddBlack"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/colorContentBackground"
+            android:gravity="center"
+            android:text="@string/string_add_Black"
+            android:textColor="@color/colorNormalIndecator"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_Report"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/colorContentBackground"
+            android:gravity="center"
+            android:text="@string/string_Report"
+            android:textColor="@color/colorNormalIndecator"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_report_normal"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/colorContentBackground"
+            android:gravity="center"
+            android:text="@string/string_report_normal"
+            android:textColor="@color/colorNormalIndecator"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_add_white_list"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@color/colorContentBackground"
+            android:gravity="center"
+            android:text="@string/string_dialog_change_set_3"
+            android:textColor="@color/colorNormalIndecator"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_Delete"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorContentBackground"
+            android:gravity="center"
+            android:text="@string/string_delete_Friend"
+            android:textColor="@color/colorNormalIndecator"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_Cancel"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorContentBackground"
+            android:gravity="center"
+            android:text="@string/string_cancel"
+            android:textColor="@color/colorTextGray"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

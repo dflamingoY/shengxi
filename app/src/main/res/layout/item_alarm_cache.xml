@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<org.xiaoxingqi.shengxi.wedgit.swiprecycler.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeMenu"
+    android:layout_width="match_parent"
+    android:layout_height="62dp"
+    android:animateLayoutChanges="true"
+    app:contentViewId="@id/relativeContent"
+    app:rightViewId="@id/tv_delete">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/relativeContent"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/colorContentBackground"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_isSelected"
+            android:layout_marginLeft="29dp"
+            android:src="@mipmap/icon_alarm_selected_cache"
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:includeFontPadding="false"
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/colorNormalIndecator"
+            android:layout_marginLeft="15dp"
+            android:text="@string/string_alarm_18" />
+
+        <TextView
+            android:id="@+id/tv_stop"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="停止播放"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:textColor="@color/color_switch_check" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="96dp"
+        android:layout_height="match_parent"
+        android:text="删除"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:textColor="@color/color_text_white"
+        android:background="@color/color_ea5455" />
+
+</org.xiaoxingqi.shengxi.wedgit.swiprecycler.SwipeMenuLayout>

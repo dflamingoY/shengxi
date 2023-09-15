@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.xiaoxingqi.shengxi.wedgit.TransLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/transLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:defaultState="content"
+    app:emptyLayout="@layout/view_empty"
+    app:offlineLayout="@layout/view_offline"
+    app:progressLayout="@layout/view_progress">
+
+    <LinearLayout
+        android:id="@+id/linearSignSeason"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="-50dp"
+        android:layout_height="220dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你选择声昔的原因?"
+            android:textSize="21sp"
+            android:textColor="#474747" />
+
+        <TextView
+            android:id="@+id/tvPorn"
+            android:layout_marginTop="70dp"
+            android:layout_width="160dp"
+            android:layout_height="44dp"
+            android:textSize="16sp"
+            android:text="约"
+            android:textColor="@color/colorIndecators"
+            android:gravity="center"
+            android:background="@drawable/shape_r_22_blue_stroke" />
+
+        <TextView
+            android:id="@+id/tvTalk"
+            android:layout_marginTop="25dp"
+            android:layout_width="160dp"
+            android:layout_height="44dp"
+            android:textSize="16sp"
+            android:text="干净交流"
+            android:textColor="@color/colorIndecators"
+            android:gravity="center"
+            android:background="@drawable/shape_r_22_blue_stroke" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearFinish"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="-50dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="224dp"
+            android:layout_height="92dp"
+            android:src="@mipmap/icon_sign_guide_sorry" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="如果你来声昔的目的，是为了\n约/撩/脱单，欢迎即刻卸载!"
+            android:textSize="18sp"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/colorIndecators" />
+
+        <TextView
+            android:layout_marginTop="134dp"
+            android:id="@+id/tvFinish"
+            android:layout_width="160dp"
+            android:layout_height="44dp"
+            android:background="@drawable/shape_blue_r_21"
+            android:text="重新选择"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearIdentity"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="-50dp"
+        android:layout_height="220dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你更倾向于?"
+            android:textSize="21sp"
+            android:textColor="#474747" />
+
+        <TextView
+            android:id="@+id/tvRecord"
+            android:layout_marginTop="70dp"
+            android:layout_width="160dp"
+            android:layout_height="44dp"
+            android:textSize="16sp"
+            android:text="记录"
+            android:textColor="@color/colorIndecators"
+            android:gravity="center"
+            android:background="@drawable/shape_r_22_blue_stroke" />
+
+        <TextView
+            android:id="@+id/tvIdentityTalk"
+            android:layout_marginTop="25dp"
+            android:layout_width="160dp"
+            android:layout_height="44dp"
+            android:textSize="16sp"
+            android:text="交流"
+            android:textColor="@color/colorIndecators"
+            android:gravity="center"
+            android:background="@drawable/shape_r_22_blue_stroke" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLastStep"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="-50dp"
+        android:layout_height="220dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你的性别是?"
+            android:textSize="21sp"
+            android:textColor="#474747" />
+
+        <TextView
+            android:id="@+id/tvIgnore"
+            android:layout_marginTop="100dp"
+            android:layout_width="205dp"
+            android:layout_height="44dp"
+            android:textSize="16sp"
+            android:text="君子之交，无关性别"
+            android:textColor="@color/colorIndecators"
+            android:gravity="center"
+            android:background="@drawable/shape_r_22_blue_stroke" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btn_Back"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:padding="4dp"
+        android:src="@mipmap/icon_back" />
+
+</org.xiaoxingqi.shengxi.wedgit.TransLayout>

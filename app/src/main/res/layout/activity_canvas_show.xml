@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gw.swipeback.SwipeBackLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeBackLayout"
+    android:layout_width="match_parent"
+    android:background="@android:color/black"
+    android:layout_height="match_parent">
+
+    <org.xiaoxingqi.shengxi.wedgit.TransLayout
+        android:id="@+id/transLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultState="content"
+        app:emptyLayout="@layout/view_empty"
+        app:offlineLayout="@layout/view_offline"
+        app:progressLayout="@layout/view_progress">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:clipChildren="false"
+            android:layout_height="match_parent">
+
+            <org.xiaoxingqi.shengxi.wedgit.SqureRelativeLayout
+                android:clipChildren="false"
+                android:id="@+id/relativeSquare"
+                android:layout_width="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_height="match_parent">
+
+                <com.github.chrisbanes.photoview.PhotoView
+                    android:id="@+id/showImgView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter" />
+            </org.xiaoxingqi.shengxi.wedgit.SqureRelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/frameOperator"
+                android:layout_below="@+id/relativeSquare"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvSend"
+                    android:layout_gravity="center"
+                    android:layout_width="105dp"
+                    android:layout_height="35dp"
+                    android:text="送给室友"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:background="@drawable/shape_r_18_round_ff9797"
+                    android:textColor="@color/color_white_2_b2b2b2" />
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </org.xiaoxingqi.shengxi.wedgit.TransLayout>
+</com.gw.swipeback.SwipeBackLayout>

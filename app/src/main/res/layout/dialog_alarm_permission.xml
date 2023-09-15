@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linearOperator"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_white_r11"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="无法开启闹钟"
+            android:textSize="17sp"
+            android:textColor="@color/colorNormalIndecator"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前APP通知被关了\n不开启通知闹钟没法用"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="19dp"
+            android:textColor="@color/color_a8a8a8" />
+
+        <TextView
+            android:id="@+id/tvSetting"
+            android:layout_width="241dp"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/color_text_white"
+            android:background="@drawable/shape_blue_r_20"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="19dp"
+            android:layout_marginBottom="25dp"
+            android:text="去设置" />
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:src="@mipmap/icon_error_net_close"
+        android:layout_below="@+id/linearOperator" />
+
+</RelativeLayout>

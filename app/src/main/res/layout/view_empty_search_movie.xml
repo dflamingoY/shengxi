@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorContentBackground"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="126dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/icon_empty_resource_search" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:gravity="center"
+        android:lineSpacingExtra="3dp"
+        android:text="@string/string_search_movies_1"
+        android:textColor="@color/colorTextGray"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="378dp">
+
+        <TextView
+            android:id="@+id/tv_CustomChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_blue_r_20"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:paddingLeft="54dp"
+            android:paddingTop="12dp"
+            android:paddingRight="54dp"
+            android:paddingBottom="12dp"
+            android:text="@string/string_manual_movies_add"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@+id/tv_CustomChat"
+            android:layout_alignTop="@+id/tv_CustomChat"
+            android:layout_alignEnd="@+id/tv_CustomChat"
+            android:layout_alignBottom="@+id/tv_CustomChat"
+            android:background="@drawable/shape_blue_r_20_layer"
+            android:clickable="false"
+            android:focusable="false" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_empty_hint"
+            android:textColor="@color/colorTextGray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_custom_server"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/string_empty_manual_add"
+            android:textColor="@color/colorIndecators"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

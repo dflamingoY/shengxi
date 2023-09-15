@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeVoiceContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.xiaoxingqi.shengxi.wedgit.ViewSeekProgress
+        android:id="@+id/viewSeekProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/frameEcho"
+        android:layout_alignTop="@+id/frameEcho"
+        android:layout_alignRight="@+id/frameEcho"
+        android:layout_alignBottom="@+id/frameEcho"
+        android:max="1000"
+        android:progress="0"
+        app:mask_color="@color/colorIndecators"
+        app:wrap_radius="17dp" />
+
+    <FrameLayout
+        android:id="@+id/frameEcho"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relativeLeft"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="14dp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:maxLength="5"
+                android:singleLine="true"
+                android:text="12:56"
+                android:textColor="@color/colorTextGray"
+                android:textSize="12sp" />
+
+            <org.xiaoxingqi.shengxi.wedgit.PlayWifiView
+                android:id="@+id/play"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="4dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeRight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_Time1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="14dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:maxLength="5"
+                android:singleLine="true"
+                android:text="12:56"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <org.xiaoxingqi.shengxi.wedgit.PlayWifiView
+                android:id="@+id/play1"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="4dp" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/viewLayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/frameEcho"
+        android:layout_alignTop="@+id/frameEcho"
+        android:layout_alignEnd="@+id/frameEcho"
+        android:layout_alignBottom="@+id/frameEcho"
+        android:background="@drawable/selector_echo_progress_layer" />
+
+</RelativeLayout>

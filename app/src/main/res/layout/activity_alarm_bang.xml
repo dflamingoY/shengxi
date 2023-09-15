@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:background="@color/colorContentBackground"
+        app:elevation="0dp"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/btn_Back"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="8dp"
+                android:padding="4dp"
+                android:src="@mipmap/icon_back" />
+
+            <TextView
+                android:id="@+id/tv_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="配音台词榜单"
+                android:textColor="@color/colorNormalIndecator"
+                android:textSize="17sp" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrayContent" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="@string/string_click_view"
+                    android:textSize="11sp"
+                    android:textColor="@color/color_b2b2b2" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeBestDubbing"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <View
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/viewDayBest"
+                        android:layout_width="183dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_height="35dp"
+                        android:background="@mipmap/icon_shape_alarm_bang_red" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/string_today_best_dubbing"
+                        android:textSize="14sp"
+                        android:textColor="@color/color_text_white"
+                        android:includeFontPadding="false"
+                        android:layout_alignLeft="@+id/viewDayBest"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="21dp" />
+
+                    <org.xiaoxingqi.shengxi.wedgit.CustomRoundImageView
+                        android:id="@+id/viDubbingBest"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignRight="@+id/viewDayBest"
+                        android:layout_marginRight="-11dp"
+                        android:scaleType="centerCrop"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:image_type="circle" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeBestWord"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <View
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/viewDayBestWord"
+                        android:layout_width="183dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_height="35dp"
+                        android:background="@mipmap/icon_shape_alarm_bang_yellow" />
+
+                    <TextView
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:text="@string/string_today_best_word"
+                        android:textSize="14sp"
+                        android:textColor="@color/color_text_white"
+                        android:includeFontPadding="false"
+                        android:layout_alignLeft="@+id/viewDayBestWord"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="21dp" />
+
+                    <org.xiaoxingqi.shengxi.wedgit.CustomRoundImageView
+                        android:id="@+id/ivWordBest"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignRight="@+id/viewDayBestWord"
+                        android:layout_marginRight="-11dp"
+                        android:scaleType="centerCrop"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:image_type="circle" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearDays"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerViewDay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <org.xiaoxingqi.shengxi.wedgit.AlarmAboutUserBangView
+                        android:id="@+id/viewDays"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearWeeks"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerViewWeek"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <org.xiaoxingqi.shengxi.wedgit.AlarmAboutUserBangView
+                        android:id="@+id/viewWeeks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearMonths"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerViewMonth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <org.xiaoxingqi.shengxi.wedgit.AlarmAboutUserBangView
+                        android:id="@+id/viewMonths"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearAll"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <org.xiaoxingqi.shengxi.wedgit.AlarmAboutUserBangView
+                        android:id="@+id/viewAll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="94dp"
+    android:layout_marginBottom="1dp"
+    android:background="@color/colorContentBackground">
+
+    <ImageView
+        android:id="@+id/ivMovieCover"
+        android:layout_width="53dp"
+        android:layout_height="64dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="14dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/drawable_default_tmpry" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignStart="@+id/ivMovieCover"
+        android:layout_alignTop="@+id/ivMovieCover"
+        android:layout_alignEnd="@+id/ivMovieCover"
+        android:layout_alignBottom="@+id/ivMovieCover"
+        android:background="@drawable/shape_img_layer" />
+
+    <org.xiaoxingqi.shengxi.wedgit.FocusTextView
+        android:id="@+id/tvMovieName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivMovieCover"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@+id/ivMovieCover"
+        android:ellipsize="marquee"
+        android:includeFontPadding="false"
+        android:singleLine="true"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_MovieType"
+        android:layout_width="wrap_content"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMovieName"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@+id/ivMovieCover"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="6dp"
+        android:textColor="@color/colorTextGray"
+        android:textSize="11sp" />
+
+</RelativeLayout>

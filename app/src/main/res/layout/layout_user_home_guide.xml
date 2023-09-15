@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frameContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000">
+
+    <RelativeLayout
+        android:id="@+id/relativeParams"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivGuideTimes"
+            android:layout_alignParentRight="true"
+            android:layout_width="56dp"
+            android:layout_height="23dp"
+            android:src="@mipmap/icon_userhome_guide_time" />
+
+        <ImageView
+            android:layout_below="@+id/ivGuideTimes"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="37dp"
+            android:layout_alignRight="@+id/ivGuideTimes"
+            android:layout_width="140dp"
+            android:layout_height="82dp"
+            android:background="@mipmap/icon_userhome_guide_text" />
+
+    </RelativeLayout>
+
+</FrameLayout>

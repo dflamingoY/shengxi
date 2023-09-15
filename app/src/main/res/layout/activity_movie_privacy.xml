@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorContentBackground"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:contentInsetStart="0dp">
+
+            <ImageView
+                android:id="@+id/btn_Back"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="8dp"
+                android:padding="4dp"
+                android:src="@mipmap/icon_back" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/string_privacySettingAct_1"
+                android:textColor="@color/colorNormalIndecator"
+                android:textSize="17sp" />
+
+            <org.xiaoxingqi.shengxi.wedgit.SkinColorsTextView
+                android:id="@+id/tv_Save"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="保存"
+                android:textColor="@color/colorTextGray"
+                android:textSize="15sp"
+                android:visibility="gone"
+                app:textNormalColor="@color/colorTextGray"
+                app:textSelectedColor="@color/colorNormalIndecator" />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrayContent" />
+
+    <org.xiaoxingqi.shengxi.wedgit.TransLayout
+        android:id="@+id/transLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultState="content"
+        app:emptyLayout="@layout/view_empty"
+        app:offlineLayout="@layout/view_offline"
+        app:progressLayout="@layout/view_progress">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:fillViewport="true"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorGrayContent"
+                android:orientation="vertical">
+
+                <org.xiaoxingqi.shengxi.wedgit.ViewMoreGroupView
+                    android:id="@+id/moreAbout"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="62dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/colorContentBackground"
+                    android:paddingLeft="2dp"
+                    app:second_title="@string/string_PrivacyAct_2"
+                    app:title_name="@string/string_movie_privacy_1" />
+
+                <org.xiaoxingqi.shengxi.wedgit.ToggleLayoutView
+                    android:id="@+id/toggleHomePage"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/colorContentBackground"
+                    app:text_color="@color/colorNormalIndecator"
+                    app:typeName="@string/string_movie_privacy_2" />
+
+                <org.xiaoxingqi.shengxi.wedgit.ToggleLayoutView
+                    android:id="@+id/toggleMemory"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/colorContentBackground"
+                    app:text_color="@color/colorNormalIndecator"
+                    app:typeName="@string/string_movie_privacy_3" />
+
+                <org.xiaoxingqi.shengxi.wedgit.ToggleLayoutView
+                    android:id="@+id/toggleMachine"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/colorContentBackground"
+                    app:text_color="@color/colorNormalIndecator"
+                    app:typeName="@string/string_movie_privacy_4" />
+
+                <org.xiaoxingqi.shengxi.wedgit.ToggleLayoutView
+                    android:id="@+id/toggleMoviePark"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/colorContentBackground"
+                    app:text_color="@color/colorNormalIndecator"
+                    app:typeName="@string/string_movie_privacy_5" />
+
+                <org.xiaoxingqi.shengxi.wedgit.ToggleLayoutView
+                    android:id="@+id/toggleMovie_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/colorContentBackground"
+                    app:text_color="@color/colorNormalIndecator"
+                    app:typeName="@string/string_movie_privacy_8" />
+
+                <org.xiaoxingqi.shengxi.wedgit.ToggleLayoutView
+                    android:id="@+id/toggleMovie_smiler"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/colorContentBackground"
+                    app:text_color="@color/colorNormalIndecator"
+                    app:typeName="@string/string_movie_privacy_9" />
+
+                <TextView
+                    android:id="@+id/tv_PrivacyDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:gravity="left"
+                    android:lineSpacingExtra="3dp"
+                    android:text="@string/string_movie_privacy_6"
+                    android:textColor="@color/colorTextGray" />
+
+                <org.xiaoxingqi.shengxi.wedgit.ToggleLayoutView
+                    android:id="@+id/toggleMovie_attention"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@color/colorContentBackground"
+                    app:text_color="@color/colorNormalIndecator"
+                    app:typeName="@string/string_movie_privacy_7" />
+
+                <TextView
+                    android:id="@+id/tv_attention"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingLeft="14dp"
+                    android:layout_marginTop="24dp"
+                    android:gravity="left"
+                    android:layout_marginBottom="100dp"
+                    android:lineSpacingExtra="3dp"
+                    android:text="@string/string_movie_privacy_10"
+                    android:textColor="@color/colorTextGray" />
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </org.xiaoxingqi.shengxi.wedgit.TransLayout>
+
+</LinearLayout>

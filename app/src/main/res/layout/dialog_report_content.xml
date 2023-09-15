@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="50dp"
+    android:background="@drawable/shape_white_r11"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:includeFontPadding="false"
+        android:text="@string/string_pb_1"
+        android:textColor="@color/colorTextGray"
+        android:textSize="14sp" />
+
+    <org.xiaoxingqi.shengxi.wedgit.SkinColorsTextView
+        android:id="@+id/tv_AddBlack"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="29dp"
+        android:background="@drawable/selector_topic"
+        android:gravity="center"
+        android:lineSpacingExtra="3dp"
+        android:text="@string/string_pb_2"
+        android:textSize="13sp"
+        app:textNormalColor="@color/colorText666666"
+        app:textSelectedColor="@color/color_text_white" />
+
+    <org.xiaoxingqi.shengxi.wedgit.SkinColorsTextView
+        android:id="@+id/tv_rubbish"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="29dp"
+        android:background="@drawable/selector_topic"
+        android:gravity="center"
+        android:lineSpacingExtra="3dp"
+        android:text="@string/string_pb_3"
+        android:textSize="13sp"
+        app:textNormalColor="@color/colorText666666"
+        app:textSelectedColor="@color/color_text_white" />
+
+    <org.xiaoxingqi.shengxi.wedgit.SkinColorsTextView
+        android:id="@+id/tv_selfish"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="29dp"
+        android:background="@drawable/selector_topic"
+        android:gravity="center"
+        android:lineSpacingExtra="3dp"
+        android:text="@string/string_pb_4"
+        android:textSize="13sp"
+        app:textNormalColor="@color/colorText666666"
+        app:textSelectedColor="@color/color_text_white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <org.xiaoxingqi.shengxi.wedgit.skinView.SkinStatueText
+            android:id="@+id/tv_Commit"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/string_Report"
+            android:textColor="@color/color_d0d0d0"
+            android:textSize="13sp"
+            app:statusTextSelected="@color/color_switch_check" />
+
+        <TextView
+            android:id="@+id/tv_Cancel"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="49dp"
+            android:gravity="center"
+            android:text="@string/string_cancel"
+            android:textColor="@color/colorText666666"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

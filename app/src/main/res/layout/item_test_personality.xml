@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeTop"
+    android:layout_width="match_parent"
+    android:layout_height="53dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="14dp"
+    android:background="@drawable/selector_topic">
+
+    <org.xiaoxingqi.shengxi.wedgit.SkinColorsTextView
+        android:id="@+id/tv_Title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:lineSpacingExtra="3dp"
+        android:textSize="13sp"
+        app:textNormalColor="@color/colorNormalIndecator"
+        app:textSelectedColor="@color/white" />
+
+</RelativeLayout>

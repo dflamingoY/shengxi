@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/colorGrayContent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_admin_setPrivacy"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/colorContentBackground"
+        android:gravity="center"
+        android:text="@string/string_admin_setPrivacy_1"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_admin_delete"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/colorContentBackground"
+        android:gravity="center"
+        android:text="@string/string_delete_painter_art"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_admin_user_details"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/colorContentBackground"
+        android:gravity="center"
+        android:text="@string/string_open_user_home_details"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_AddBlack"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/colorContentBackground"
+        android:gravity="center"
+        android:text="@string/string_add_Black"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_Follow"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/colorContentBackground"
+        android:gravity="center"
+        android:text="@string/string_follow_book"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvCollection"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/colorContentBackground"
+        android:gravity="center"
+        android:text="@string/string_10"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvTop"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/colorContentBackground"
+        android:gravity="center"
+        android:text="置顶"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_Report"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/colorContentBackground"
+        android:gravity="center"
+        android:text="@string/string_Report"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_report_normal"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorContentBackground"
+        android:gravity="center"
+        android:text="@string/string_report_normal"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_Delete"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorContentBackground"
+        android:gravity="center"
+        android:text="@string/string_Delete"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_Cancel"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorContentBackground"
+        android:gravity="center"
+        android:text="@string/string_cancel"
+        android:textColor="@color/colorTextGray"
+        android:textSize="15sp" />
+
+</LinearLayout>

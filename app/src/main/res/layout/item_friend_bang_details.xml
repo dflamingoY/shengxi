@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zyp.cardview.YcCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ycCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="19dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginRight="19dp"
+    android:layout_marginBottom="3dp"
+    app:ycCardBackgroundColor="#00ffffff"
+    app:ycCardCornerRadius="12dp"
+    app:ycCardElevation="5dp"
+    app:ycCardMaxElevation="5dp"
+    app:ycCardPreventCornerOverlap="false"
+    app:ycStartShadowColor="@color/cardview_dark_background">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="0dp"
+        app:cardBackgroundColor="#00ffffff"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="0dp">
+
+        <ImageView
+            android:id="@+id/iv_card_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorGrayContent"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:id="@+id/viewGreyLayer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#33000000" />
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/relativeCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_More"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="29dp"
+            android:src="@mipmap/icon_friend_more_menu"
+            android:visibility="gone" />
+
+        <org.xiaoxingqi.shengxi.wedgit.LinearStatusText
+            android:id="@+id/linearStatusText"
+            android:layout_width="63dp"
+            android:layout_height="19dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="29dp"
+            android:background="@drawable/shape_friend_add_friends_bg"
+            android:visibility="gone"
+            app:textNormalColor="@color/white"
+            app:textSelectedColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_rank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/relativeAvatar"
+            android:layout_alignRight="@+id/relativeAvatar"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="1"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_Desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="63dp"
+            android:layout_marginEnd="28dp"
+            android:gravity="end"
+            android:lineSpacingExtra="10dp"
+            android:maxEms="6"
+            android:maxLines="2"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <org.xiaoxingqi.shengxi.wedgit.RevelView
+            android:id="@+id/revelView"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="42dp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeAvatar"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="51dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_transparent_friends_bang" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_centerInParent="true"
+                app:cardBackgroundColor="#00ffffff"
+                app:cardCornerRadius="31dp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:id="@+id/iv_Avatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/icon_user_default" />
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/linearClickPlay"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:layout_alignEnd="@+id/relativeAvatar"
+            android:layout_alignBottom="@+id/relativeAvatar"
+            android:layout_marginRight="-12dp"
+            android:layout_marginBottom="-12dp"
+            android:padding="10dp"
+            android:src="@mipmap/icon_friends_list_play" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="127dp"
+            android:layout_marginBottom="13dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_UserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:minWidth="68dp"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_FriendsCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingRight="29dp"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_top"
+            android:layout_width="49dp"
+            android:layout_height="51dp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/shape_friends_list_layer_transparent" />
+
+</com.zyp.cardview.YcCardView>

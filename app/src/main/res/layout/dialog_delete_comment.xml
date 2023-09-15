@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:layout_marginBottom="-11dp"
+    app:cardCornerRadius="11dp">
+
+    <RelativeLayout
+        android:id="@+id/relative_Boot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGrayContent"
+        android:orientation="vertical"
+        android:paddingBottom="11dp">
+
+        <TextView
+            android:id="@+id/tv_Hint"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@color/colorContentBackground"
+            android:gravity="center"
+            android:text="@string/string_delete_Talks"
+            android:textColor="@color/colorNormalIndecator"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_Commit"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_below="@+id/tv_Hint"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorContentBackground"
+            android:gravity="center"
+            android:text="@string/string_confirm"
+            android:textColor="@color/colorNormalIndecator"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_Cancel"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_below="@+id/tv_Commit"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorContentBackground"
+            android:gravity="center"
+            android:text="@string/string_cancel"
+            android:textColor="@color/colorTextGray"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

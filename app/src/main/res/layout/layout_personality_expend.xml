@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_ShowText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="3sp"
+        android:maxLines="2"
+        android:text="  \n  "
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_More"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:includeFontPadding="false"
+        android:text="展开阅读更多"
+        android:textColor="@color/colorTextGray"
+        android:textSize="12sp" />
+</LinearLayout>

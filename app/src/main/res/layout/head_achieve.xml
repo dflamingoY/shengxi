@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:background="@color/color_ffceaa_2_21223c"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_achieve_head" />
+
+    <include layout="@layout/item_achieve_user" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorGrayContent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvAchieveVisible"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_achieve_hide_hint"
+            android:textSize="12sp"
+            android:paddingLeft="15dp"
+            android:textColor="@color/colorTextGray"
+            android:includeFontPadding="false" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+    </LinearLayout>
+
+</LinearLayout>

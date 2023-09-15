@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="@color/colorContentBackground">
+
+
+    <TextView
+        android:id="@+id/tv_UserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="17dp"
+        android:layout_toRightOf="@+id/cardView"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:includeFontPadding="false"
+        android:singleLine="true"
+        android:text="@string/string_cike_anonymous"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="35dp"
+        android:gravity="center_horizontal"
+        android:includeFontPadding="false"
+        android:text="@string/string_cile_destroy"
+        android:textColor="@color/colorTextGray"
+        android:textSize="10sp" />
+
+
+    <LinearLayout
+        android:id="@+id/linear_Progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardView"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="62dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <org.xiaoxingqi.shengxi.wedgit.VoiceProgress
+            android:id="@+id/voiceProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tvType"
+            android:background="@drawable/shape_voice_bg" />
+
+    </LinearLayout>
+
+    <org.xiaoxingqi.shengxi.wedgit.ImageGroupView
+        android:id="@+id/imageGroup"
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:layout_below="@+id/linear_Progress"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+
+    <TextView
+        android:id="@+id/tv_Report"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="@string/string_Report"
+        android:textColor="@color/colorTextGray"
+        android:textSize="11sp" />
+
+</RelativeLayout>

@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<org.xiaoxingqi.shengxi.wedgit.TransLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/transLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:defaultState="content"
+    app:emptyLayout="@layout/view_empty"
+    app:offlineLayout="@layout/view_offline"
+    app:progressLayout="@layout/view_progress">
+
+    <ImageView
+        android:id="@+id/iv_canvas_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/draw_canvas_bg" />
+
+    <RelativeLayout
+        android:id="@+id/session_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorContentBackground"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/view_status_bar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <RelativeLayout
+            android:id="@+id/relative_Info"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_below="@+id/view_status_bar">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_Avatar"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:id="@+id/iv_Avatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_UserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@+id/card_Avatar"
+                android:includeFontPadding="false"
+                android:textColor="#ff333333"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_close"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="71dp"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/shape_round_red_4"
+                android:text="@string/string_canvas_2"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_Timer"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_below="@+id/relative_Info"
+            android:background="#FF08D9D6"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+
+        <org.xiaoxingqi.shengxi.wedgit.doodle.DoodleView
+            android:id="@+id/doodle_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_Timer"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/tv_canvas_topic"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_below="@+id/tv_Timer"
+            android:background="@color/colorGrayContent"
+            android:gravity="center"
+            android:text="@string/string_canvas_topics_1"
+            android:textColor="@color/color_CCCCCC"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/btn_clear"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:includeFontPadding="false"
+                android:text="@string/string_canvas_3"
+                android:textColor="@color/colorIndecators" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:includeFontPadding="false"
+                android:text="@string/string_canvas_4"
+                android:textColor="#FFCCCCCC"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_ReBack"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:includeFontPadding="false"
+                android:text="@string/string_canvas_5"
+                android:textColor="@color/colorIndecators" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_Match"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <org.xiaoxingqi.shengxi.wedgit.GradientTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="63dp"
+            android:text="@string/string_canvas_6"
+            android:textColor="#FF35D1BA"
+            android:textSize="30dp"
+            app:centerColor="#FF12D8FA"
+            app:endColor="#FF35D1BA"
+            app:startColor="#FF1FA2FF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="@string/string_canvas_7"
+            android:textColor="#FF1EA5FF" />
+
+        <org.xiaoxingqi.shengxi.wedgit.SkinChronometer
+            android:id="@+id/tv_TimeTick"
+            android:layout_width="288dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/shape_stroke_bound_10_magic"
+            android:gravity="center"
+            android:text="59秒"
+            android:textColor="#FF1EA5FF"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="@string/string_canvas_8"
+            android:textColor="#FF1EA5FF" />
+
+        <TextView
+            android:id="@+id/tv_Match"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginRight="36dp"
+            android:background="@drawable/shape_gradient_magic_canvas_match"
+            android:gravity="center"
+            android:text="匹 配"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_change_set_1"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_below="@+id/tv_desc2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="36dp"
+            android:background="@drawable/shape_stroke_bound_10_magic"
+            android:gravity="center"
+            android:text="更改匹配偏好"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_Wait"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <org.xiaoxingqi.shengxi.wedgit.GradientTextView
+            android:id="@+id/tv_GradientText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="63dp"
+            android:includeFontPadding="false"
+            android:text="@string/string_canvas_9"
+            android:textColor="#FF35D1BA"
+            android:textSize="30dp"
+            app:centerColor="#FF12D8FA"
+            app:endColor="#FF35D1BA"
+            app:startColor="#FF1FA2FF" />
+
+        <org.xiaoxingqi.shengxi.wedgit.timeTiker.CountdownView
+            android:id="@+id/countDown"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_below="@+id/tv_GradientText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="39dp"
+            android:layout_marginRight="36dp"
+            android:background="@drawable/shape_stroke_bound_10_magic"
+            app:isHideTimeBackground="true"
+            app:isShowDay="false"
+            app:isShowHour="true"
+            app:isShowMillisecond="false"
+            app:isShowMinute="true"
+            app:isShowSecond="true"
+            app:isTimeTextBold="true"
+            app:suffixGravity="bottom"
+            app:suffixHour=":"
+            app:suffixMinute=":"
+            app:suffixTextColor="#FF1EA5FF"
+            app:suffixTextSize="22sp"
+            app:timeTextColor="#FF1EA5FF"
+            app:timeTextSize="22sp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_Desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/countDown"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginRight="36dp"
+            android:gravity="start"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="3dp"
+            android:text="@string/string_magic_canvas_i_1"
+            android:textColor="#FF0074C1"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_Desc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_Desc"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="3dp"
+            android:text="@string/string_magic_canvas_i_2"
+            android:textColor="#FF0074C1"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_desc2"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_below="@+id/tv_Desc1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginRight="36dp"
+            android:background="@drawable/shape_stroke_bound_10_magic"
+            android:gravity="center"
+            android:text="@string/string_canvas_12"
+            android:textColor="#FF1EA5FF" />
+
+        <TextView
+            android:id="@+id/tv_change_set"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_below="@+id/tv_desc2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="36dp"
+            android:background="@drawable/shape_gradient_magic_canvas_match"
+            android:gravity="center"
+            android:text="更改匹配偏好"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/btn_Back"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:padding="4dp"
+        android:src="@mipmap/icon_back" />
+
+    <ImageView
+        android:id="@+id/loading"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="52dp"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/drawable_canvas_gif" />
+
+    <ImageView
+        android:id="@+id/iv_card"
+        android:layout_width="56dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="103dp"
+        android:layout_marginBottom="7dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/icon_magic_cp" />
+
+</org.xiaoxingqi.shengxi.wedgit.TransLayout>

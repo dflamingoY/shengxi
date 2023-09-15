@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorContentBackground">
+
+    <org.xiaoxingqi.shengxi.wedgit.SwitchButton
+        android:id="@+id/toggle_Button"
+        android:layout_width="52dp"
+        android:layout_height="31dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:clickable="false"
+        android:focusable="false"
+        app:sb_background="@color/color_text_white"
+        app:sb_button_color="@color/color_text_white"
+        app:sb_checked_color="@color/color_switch_check"
+        app:sb_shadow_color="@color/color_switch_token"
+        app:sb_shadow_effect="false"
+        app:sb_show_indicator="false"
+        app:sb_button_stroke_color="@color/color_sb_stroke"
+        app:sb_uncheck_color="@color/color_switch_token" />
+    <!-- app:sb_checked_color="@color/colorIndecators"
+        app:sb_show_indicator="false"
+-->
+
+    <TextView
+        android:id="@+id/tv_TypeName"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="回声"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_Private"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/tv_TypeName"
+        android:focusable="true"
+        android:textColor="@color/colorTextGray"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/viewClick"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true" />
+
+</RelativeLayout>

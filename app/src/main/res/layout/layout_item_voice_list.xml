@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeMovie"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <org.xiaoxingqi.shengxi.wedgit.CustomRoundImageView
+        android:id="@+id/iv_Movies"
+        android:layout_width="96dp"
+        android:layout_height="133dp"
+        android:layout_marginLeft="15dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/drawable_default_tmpry"
+        app:image_radius="5dp"
+        app:image_type="round" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignStart="@+id/iv_Movies"
+        android:layout_alignTop="@+id/iv_Movies"
+        android:layout_alignEnd="@+id/iv_Movies"
+        android:layout_alignBottom="@+id/iv_Movies"
+        android:background="@drawable/shape_r5_layer" />
+
+    <TextView
+        android:id="@+id/tv_MovieName"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@+id/iv_Movies"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:singleLine="true"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <org.xiaoxingqi.shengxi.wedgit.SelectorImage
+        android:id="@+id/iv_ScoreType"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_below="@+id/tv_MovieName"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/iv_Movies"
+        android:src="@mipmap/icon_edit_good" />
+
+    <TextView
+        android:id="@+id/tv_MovieDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_ScoreType"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@+id/iv_Movies"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="6dp"
+        android:maxLines="2"
+        android:singleLine="true"
+        android:textColor="@color/colorTextGray"
+        android:textSize="12sp" />
+
+</RelativeLayout>
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="29dp">
+
+        <org.xiaoxingqi.shengxi.wedgit.PagerSlidingTabStripExtends
+            android:id="@+id/pagerSliding"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="37dp"
+            app:pstsIndicatorColor="@color/colorIndecators"
+            app:pstsIndicatorHeight="0dp"
+            app:pstsMargin="0dp"
+            app:pstsScrollOffset="120dp"
+            app:pstsSelectedTabTextColor="@color/colorIndecators"
+            app:pstsSelectedTabTextSize="13sp"
+            app:pstsTabTextColor="@color/colorNormalIndecator"
+            app:pstsTabTextSize="13sp"
+            app:pstsTextAllCaps="true"
+            android:visibility="gone"
+            app:pstsUnderlineHeight="8dp" />
+
+        <org.xiaoxingqi.shengxi.wedgit.skinView.SkinStatueText
+            android:id="@+id/tv_share_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:textColor="@color/colorTextGray"
+            android:layout_marginLeft="14dp"
+            app:statusTextSelected="@color/color_75BDBE_to_528485"
+            android:layout_centerVertical="true" />
+
+        <org.xiaoxingqi.shengxi.wedgit.PagerSlidingBlock
+            android:id="@+id/toggle_attention"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:background="@drawable/selector_world_tab_bg"
+            app:group_title="@array/arrayWorldTitle"
+            app:normal_size="11sp"
+            app:normal_width="55dp"
+            app:normal_color="@color/colorTextGray"
+            app:selector_color="@color/color_text_white"
+            app:slider_color="@color/color_switch_check"
+            android:layout_height="22dp"
+            app:stateGroupSelectedTextColor="@color/color_text_white"
+            app:stateGroupNormalTextColor="@color/color_75BDBE_to_528485" />
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/worldViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

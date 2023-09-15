@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="390dp"
+    android:layout_gravity="bottom"
+    android:background="@drawable/shape_time_machine_round"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_SomeBody_memory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginBottom="19dp"
+            android:textColor="@color/colorNormalIndecator"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <org.xiaoxingqi.shengxi.wedgit.discretescrollview.DiscreteScrollView
+            android:id="@+id/discreteView"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="#00ffffff" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_alignStart="@+id/discreteView"
+            android:layout_alignEnd="@+id/discreteView"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginRight="-10dp"
+            android:background="@drawable/shape_gradent_white" />
+
+        <TextView
+            android:id="@+id/tvRelation"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_SomeBody_memory"
+            android:layout_height="40dp"
+            android:gravity="center_vertical|right"
+            android:paddingRight="16dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:background="@color/colorContentBackground"
+            android:textSize="13sp"
+            android:textColor="@color/color_b2b2b2" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBindPhoneline" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/linearSort"
+        android:layout_width="match_parent"
+        android:layout_gravity="end"
+        android:layout_height="23dp"
+        android:gravity="center_vertical"
+        android:layout_marginEnd="15dp">
+
+        <TextView
+            android:layout_marginStart="21dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorNormalIndecator"
+            android:textSize="13sp"
+            android:text="时间排序" />
+
+        <ImageView
+            android:id="@+id/ivArrow"
+            android:layout_marginStart="3dp"
+            android:layout_width="9dp"
+            android:src="@mipmap/icon_black_arrow"
+            android:layout_height="5dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBindPhoneline" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorGrayContent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerPlayList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorGrayContent" />
+
+
+        <LinearLayout
+            android:id="@+id/linearEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorContentBackground"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_Empty_Hint"
+                android:layout_width="154dp"
+                android:layout_height="154dp"
+                android:src="@mipmap/icon_self_empty_dialog_hint" />
+
+            <TextView
+                android:id="@+id/tv_Empty_Hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="29dp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="3dp"
+                android:text="@string/string_empty_self_voice_list"
+                android:textColor="@color/colorText666666"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_SendVoice"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/shape_bound_r4_blue"
+                android:gravity="center"
+                android:text="@string/string_sendAct_2"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/colorGrayContent" />
+
+    <TextView
+        android:id="@+id/tv_Close"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/colorContentBackground"
+        android:gravity="center"
+        android:text="@string/string_statue_off"
+        android:textColor="@color/colorTextGray" />
+
+</LinearLayout>

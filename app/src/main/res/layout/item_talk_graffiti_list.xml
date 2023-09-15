@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.xiaoxingqi.shengxi.wedgit.swiprecycler.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeMenu"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:animateLayoutChanges="true"
+    app:contentViewId="@id/relativeContent"
+    app:rightViewId="@id/linearRight">
+
+    <RelativeLayout
+        android:id="@+id/relativeContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorContentBackground">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardlayout"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="9dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp">
+
+            <ImageView
+                android:id="@+id/roundCircle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_img_layer" />
+
+        </android.support.v7.widget.CardView>
+
+        <ImageView
+            android:id="@+id/iv_user_type"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_alignRight="@+id/cardlayout"
+            android:layout_alignBottom="@+id/cardlayout"
+            android:src="@drawable/selector_user_use_type"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivOfficial"
+            android:layout_width="14dp"
+            android:visibility="gone"
+            android:layout_height="14dp"
+            android:layout_alignRight="@+id/cardlayout"
+            android:layout_alignBottom="@+id/cardlayout"
+            android:src="@mipmap/icon_offical_logo" />
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/cardlayout"
+            android:includeFontPadding="false"
+            android:textColor="@color/colorNormalIndecator"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_ChatType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvUserName"
+            android:layout_marginTop="38dp"
+            android:includeFontPadding="false"
+            android:textColor="@color/color_b2b2b2"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/colorTextGray"
+            android:textSize="13sp" />
+
+        <View
+            android:id="@+id/viewLine"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="11dp"
+            android:layout_toRightOf="@+id/cardlayout"
+            android:background="@color/color_Dividing" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearRight"
+        android:layout_marginBottom="0.5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_Report"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_ddd_to_222238"
+            android:gravity="center"
+            android:text="@string/string_report_normal"
+            android:textColor="@color/color_white_2_b2b2b2"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_Delete"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_FF3B30_to_B32922"
+            android:gravity="center"
+            android:text="@string/string_Delete"
+            android:textColor="@color/color_white_2_b2b2b2"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+</org.xiaoxingqi.shengxi.wedgit.swiprecycler.SwipeMenuLayout>

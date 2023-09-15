@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frame_theme_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorContentBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view_status_height"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="36dp"
+            android:text="@string/string_theme_title_1"
+            android:textColor="@color/color_b8b0b0"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/string_theme_title_2"
+            android:textColor="@color/color_b8b0b0"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="19dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <org.xiaoxingqi.shengxi.wedgit.ThemeItemView
+                android:id="@+id/themeDay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:select_Title="@string/string_theme_title_3"
+                app:selected_img_id="@mipmap/icon_theme_day" />
+
+            <org.xiaoxingqi.shengxi.wedgit.ThemeItemView
+                android:id="@+id/themeNight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:select_Title="@string/string_theme_title_31"
+                app:selected_img_id="@mipmap/icon_theme_night" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/string_theme_title_4"
+            android:textColor="@color/color_b8b0b0"
+            android:textSize="13sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="19dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <org.xiaoxingqi.shengxi.wedgit.ThemeItemView
+                android:id="@+id/themeEmpty"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:select_Title="@string/string_theme_title_5"
+                app:selected_img_id="@mipmap/icon_theme_empty" />
+
+            <org.xiaoxingqi.shengxi.wedgit.ThemeItemView
+                android:id="@+id/themeRain"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:select_Title="@string/string_theme_title_6"
+                app:selected_img_id="@mipmap/icon_theme_rain" />
+
+            <org.xiaoxingqi.shengxi.wedgit.ThemeItemView
+                android:id="@+id/themeSnow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:select_Title="@string/string_theme_title_7"
+                app:selected_img_id="@mipmap/icon_theme_snow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="19dp"
+            android:layout_marginBottom="34dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <org.xiaoxingqi.shengxi.wedgit.ThemeItemView
+                android:id="@+id/themeLeaves"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:select_Title="@string/string_theme_title_8"
+                app:selected_img_id="@mipmap/icon_theme_leaves" />
+
+            <org.xiaoxingqi.shengxi.wedgit.ThemeItemView
+                android:id="@+id/themeFlower"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:select_Title="@string/string_theme_title_9"
+                app:selected_img_id="@mipmap/icon_theme_flower" />
+
+            <org.xiaoxingqi.shengxi.wedgit.ThemeItemView
+                android:id="@+id/themeMaple"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:select_Title="@string/string_maple_lelf"
+                app:selected_img_id="@mipmap/icon_theme_maple" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

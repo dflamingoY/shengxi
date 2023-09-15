@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorContentBackground"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="332dp"
+        android:layout_height="333dp"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/icon_paint_stroke_bg" />
+
+        <org.xiaoxingqi.shengxi.wedgit.SqureRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="21dp"
+            android:layout_height="wrap_content">
+
+            <org.xiaoxingqi.shengxi.wedgit.SqureImageView
+                android:id="@+id/square_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_img_layer" />
+
+        </org.xiaoxingqi.shengxi.wedgit.SqureRelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearOperate"
+        android:layout_width="320dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="47dp"
+        android:background="@color/color_FFFDF7_to_1C1C2E"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/relativeLikes"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingStart="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/ivLikes"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:src="@drawable/selector_painter_like" />
+
+            <TextView
+                android:id="@+id/tvLikes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:minEms="1"
+                android:textColor="@color/colorTextGray"
+                android:textSize="11dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearGraffiti"
+            android:layout_marginStart="27dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivGraffiti"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:src="@mipmap/icon_graffiti" />
+
+            <TextView
+                android:id="@+id/tvGraffiti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:minEms="1"
+                android:textColor="@color/colorTextGray"
+                android:textSize="11dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/relativeCollection"
+            android:layout_marginStart="27dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivCollection"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:src="@drawable/selector_art_collection" />
+
+            <TextView
+                android:id="@+id/tvCollections"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:minEms="1"
+                android:singleLine="true"
+                android:textColor="@color/colorTextGray"
+                android:textSize="11dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|end"
+            android:paddingEnd="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="by"
+                android:textColor="@color/color_b2b2b2_1" />
+
+            <TextView
+                android:id="@+id/tvSelf"
+                android:text="YOU"
+                android:layout_marginStart="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/color_b2b2b2" />
+
+            <RelativeLayout
+                android:id="@+id/relativeUser"
+                android:visibility="gone"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:background="@color/colorContentBackground">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="0dp">
+
+                    <ImageView
+                        android:id="@+id/roundImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shape_img_layer" />
+
+                </android.support.v7.widget.CardView>
+
+                <ImageView
+                    android:id="@+id/iv_user_type"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_alignRight="@+id/cardView"
+                    android:layout_alignBottom="@+id/cardView"
+                    android:src="@drawable/selector_user_use_type"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

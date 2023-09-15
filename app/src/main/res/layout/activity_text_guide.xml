@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/frameDelay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/drawa_guide_test"
+        android:clickable="true"
+        android:focusable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="144dp"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:shadowColor="@color/colorIndecators"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="3.0"
+            android:singleLine="true"
+            android:text="@string/string_test_guide_9"
+            android:textColor="#ff30e3ca"
+            android:textSize="26sp" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="216dp"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="9dp"
+            android:text="@string/string_test_guide_8"
+            android:textColor="#FFE8FDFF"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="276dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:includeFontPadding="false"
+                android:text="@string/string_test_guide_10"
+                android:textColor="#FFE8FDFF"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_Desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:includeFontPadding="false"
+                android:text="@string/string_test_guide_11"
+                android:textColor="#FFFEAEF6"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="331dp"
+            android:layout_marginRight="26dp"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="10dp"
+            android:shadowColor="#33272b2b"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="3.0"
+            android:text="@string/string_test_guide_7"
+            android:textColor="#ffe8fdff"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_Ignore"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="446dp"
+            android:layout_marginRight="26dp"
+            android:background="@mipmap/icon_test_guide_button"
+            android:gravity="center"
+            android:text="@string/string_test_guide_6"
+            android:textColor="#FFE8FDFF"
+            android:textSize="17sp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameTest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/drawa_guide_test"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="69dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="102dp"
+            android:src="@mipmap/icon_test_guide_1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="135dp"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:shadowColor="@color/colorIndecators"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="3.0"
+            android:text="@string/string_test_guide_5"
+            android:textColor="#ff30e3ca"
+            android:textSize="34sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="226dp"
+            android:layout_marginRight="42dp"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="4dp"
+            android:text="@string/string_test_guide_4"
+            android:textColor="#FFE8FDFF"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="343dp"
+            android:shadowColor="#33272b2b"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="3.0"
+            android:text="@string/string_test_guide_3"
+            android:textColor="#ffe8fdff"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_TextNow"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="417dp"
+            android:layout_marginRight="42dp"
+            android:background="@mipmap/icon_test_guide_button"
+            android:gravity="center"
+            android:text="@string/string_test_guide_2"
+            android:textColor="#FFE8FDFF"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_Delay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="490dp"
+            android:layout_marginRight="43dp"
+            android:shadowColor="#33272b2b"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="3.0"
+            android:text="@string/string_test_guide_1"
+            android:textColor="#ffe8fdff"
+            android:textSize="13sp" />
+    </FrameLayout>
+
+</FrameLayout>

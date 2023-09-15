@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.xiaoxingqi.shengxi.wedgit.TransLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootTransLayout"
+    app:progressLayout="@layout/view_progress"
+    app:emptyLayout="@layout/view_empty"
+    app:offlineLayout="@layout/view_offline"
+    app:defaultState="content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorContentBackground"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relativeVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <org.xiaoxingqi.shengxi.wedgit.videoPlayer.VideoView
+                android:layout_width="match_parent"
+                android:id="@+id/video"
+                android:background="#00ff0000"
+                android:layout_height="0dp" />
+
+            <ImageView
+                android:layout_alignLeft="@+id/video"
+                android:layout_alignBottom="@+id/video"
+                android:layout_alignTop="@+id/video"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_alignRight="@+id/video"
+                android:id="@+id/viewCoverVideo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+            <View
+                android:id="@+id/ivTopCover"
+                android:layout_alignLeft="@+id/video"
+                android:layout_alignBottom="@+id/video"
+                android:layout_alignTop="@+id/video"
+                android:layout_alignRight="@+id/video"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:background="@color/colorContentBackground" />
+
+        </RelativeLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/home_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/app_bar_layout" />
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00ffffff"
+            app:elevation="0dp">
+
+            <View
+                android:id="@+id/view_status_bar_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp">
+
+                <ImageView
+                    android:id="@+id/iv_Guide"
+                    android:layout_width="36dp"
+                    android:layout_height="37dp"
+                    android:padding="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:src="@mipmap/icon_app_theme" />
+
+                <org.xiaoxingqi.shengxi.wedgit.PagerSlidingTabStripExtends
+                    android:id="@+id/pagerSliding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    app:pstsIndicatorColor="@color/colorIndecators"
+                    app:pstsIndicatorHeight="2dp"
+                    app:pstsMargin="5dp"
+                    app:pstsScrollOffset="50dp"
+                    app:pstsSelectedTabTextColor="@color/colorIndecators"
+                    app:pstsSelectedTabTextSize="17sp"
+                    app:pstsTabTextColor="@color/color_special_text_grey"
+                    app:pstsTabTextSize="17sp"
+                    app:pstsTextAllCaps="true"
+                    app:pstsUnderlineHeight="8dp"
+                    app:stateSelectedTextColor="@color/colorIndecators"
+                    app:stateNormalTextColor="@color/color_special_text_grey" />
+
+                <View
+                    android:id="@+id/viewPoint"
+                    android:layout_toRightOf="@+id/pagerSliding"
+                    android:layout_marginLeft="-6dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_width="6dp"
+                    android:visibility="gone"
+                    android:layout_height="6dp"
+                    android:background="@drawable/shape_red_circle" />
+
+                <TextView
+                    android:id="@+id/tv_Nearby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp"
+                    android:visibility="gone"
+                    android:text="@string/string_find_friends_6"
+                    android:textColor="@color/colorNormalIndecator"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/ivAchieve"
+                    android:visibility="gone"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="14dp"
+                    android:src="@drawable/selector_achieve_logo" />
+
+                <TextView
+                    android:id="@+id/tvWhoAreYou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="漫画"
+                    android:textSize="13sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/color_666666_to_999999" />
+
+            </RelativeLayout>
+
+
+        </android.support.design.widget.AppBarLayout>
+    </RelativeLayout>
+
+</org.xiaoxingqi.shengxi.wedgit.TransLayout>

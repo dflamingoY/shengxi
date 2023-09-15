@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="text_retry" type="id" />
+    <item name="text_msg" type="id" />
+    <item name="linearProgress" type="id" />
+    <item name="progress" type="id" />
+    <item name="relative_Empty" type="id" />
+
+
+    <item name="auto_focus" type="id" />
+    <item name="decode" type="id" />
+    <item name="decode_failed" type="id" />
+    <item name="decode_succeeded" type="id" />
+    <item name="encode_failed" type="id" />
+    <item name="encode_succeeded" type="id" />
+    <item name="launch_product_query" type="id" />
+    <item name="quit" type="id" />
+    <item name="restart_preview" type="id" />
+    <item name="return_scan_result" type="id" />
+    <item name="search_book_contents_failed" type="id" />
+    <item name="search_book_contents_succeeded" type="id" />
+    <item name="iv_click_reStart" type="id" />
+    <item name="iv_click_reStart_other" type="id" />
+
+    <item name="salient_video_fullscreen_id" type="id" />
+    <item name="salient_video_tiny_id" type="id" />
+</resources>

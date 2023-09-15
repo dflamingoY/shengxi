@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.xiaoxingqi.shengxi.wedgit.TransLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/transLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:defaultState="content"
+    app:progressLayout="@layout/view_progress"
+    app:offlineLayout="@layout/view_offline"
+    app:emptyLayout="@layout/view_empty">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@color/colorContentBackground"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/relativeTop"
+            android:layout_width="match_parent"
+            android:background="@color/colorContentBackground"
+            android:layout_height="42dp">
+
+            <TextView
+                android:id="@+id/tvArtCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_32"
+                android:textSize="10sp"
+                android:textColor="@color/colorTextGray"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp" />
+
+            <org.xiaoxingqi.shengxi.wedgit.GroupToggleView
+                android:id="@+id/headButton"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:background="@drawable/shape_bound_stroke_r_13_grey"
+                app:group_title="@array/canvas_me_title"
+                app:normal_size="12sp"
+                app:normal_width="62dp"
+                app:normal_color="@color/colorTextGray"
+                app:selector_color="@color/color_text_white"
+                app:slider_color="@color/color_switch_check"
+                android:layout_height="22dp" />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipeRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <include
+                layout="@layout/view_empty_art"
+                android:visibility="gone"
+                android:id="@+id/layoutEmptyArt" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/draw_alarm_split_line" />
+
+</org.xiaoxingqi.shengxi.wedgit.TransLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorGrayContent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/iv_empty_movies"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="46dp"
+            android:src="@mipmap/icon_empty_movies_1" />
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="227dp"
+            android:layout_width="150dp"
+            android:visibility="gone"
+            android:layout_height="40dp"
+            android:src="@drawable/selector_movies_attention_empty" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/iv_empty_books"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="46dp"
+            android:src="@mipmap/icon_empty_bookfiends" />
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="227dp"
+            android:src="@drawable/selector_book_attention_empty" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/iv_empty_songs"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="46dp"
+            android:src="@mipmap/icon_empty_music" />
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="227dp"
+            android:src="@drawable/selector_song_attention_empty" />
+    </FrameLayout>
+
+</FrameLayout>

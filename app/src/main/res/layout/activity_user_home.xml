@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearAllContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGrayContent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view_status_bar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorContentBackground"
+            app:elevation="0dp">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:contentInsetStart="0dp">
+
+                <ImageView
+                    android:id="@+id/btn_Back"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="8dp"
+                    android:padding="4dp"
+                    android:src="@mipmap/icon_back" />
+
+                <TextView
+                    android:id="@+id/tv_Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:text="@string/string_user_history"
+                    android:textColor="@color/colorNormalIndecator"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tv_VoiceLength"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:visibility="gone"
+                    android:paddingRight="15dp"
+                    android:textColor="@color/colorIndecators"
+                    android:textSize="13sp" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardLayout"
+                    android:layout_width="22dp"
+                    android:layout_gravity="right"
+                    android:layout_height="22dp"
+                    android:layout_marginEnd="15dp"
+                    app:cardCornerRadius="11dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#00ffffff">
+
+                    <ImageView
+                        android:id="@+id/ivAvatar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shape_img_layer" />
+
+                </android.support.v7.widget.CardView>
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+
+        <org.xiaoxingqi.shengxi.wedgit.TransLayout
+            android:id="@+id/transLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            app:defaultState="content"
+            app:emptyLayout="@layout/view_empty"
+            app:offlineLayout="@layout/view_offline"
+            app:progressLayout="@layout/view_progress">
+
+            <RelativeLayout
+                android:id="@+id/swipeRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_home_recycler_background"
+                android:clipChildren="false">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipChildren="false" />
+            </RelativeLayout>
+
+            <org.xiaoxingqi.shengxi.wedgit.GreyImageView
+                android:id="@+id/ivRecord"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="65dp"
+                android:src="@mipmap/icon_transparent_recording_listen"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/relativeUserBottomPlayer"
+                android:layout_width="256dp"
+                android:layout_height="60dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="@mipmap/icon_home_user_bottom_menu">
+
+                <TextView
+                    android:id="@+id/tvCalendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="12dp"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/colorIndecators"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="12dp"
+                    android:includeFontPadding="false"
+                    android:text="@string/string_random_play"
+                    android:textColor="@color/colorIndecators"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/tvDetails"
+                    android:layout_width="45dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="18dp"
+                    android:background="@drawable/shape_r_13_blue_stroke"
+                    android:gravity="center"
+                    android:text="查看"
+                    android:textColor="@color/colorIndecators"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvStop"
+                    android:layout_width="45dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25dp"
+                    android:layout_toLeftOf="@+id/tvDetails"
+                    android:background="@drawable/shape_r_13_blue_stroke"
+                    android:gravity="center"
+                    android:text="停止"
+                    android:textColor="@color/colorIndecators"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+        </org.xiaoxingqi.shengxi.wedgit.TransLayout>
+
+    </LinearLayout>
+
+    <org.xiaoxingqi.shengxi.wedgit.CustomPlayMenuView
+        android:id="@+id/customPlayMenu"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent" />
+
+</FrameLayout>

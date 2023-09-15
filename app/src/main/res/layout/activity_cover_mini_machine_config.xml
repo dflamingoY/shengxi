@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:contentInsetStart="0dp">
+
+            <ImageView
+                android:id="@+id/btn_Back"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="8dp"
+                android:padding="4dp"
+                android:src="@mipmap/icon_back" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_privacyAct_16"
+                    android:textColor="@color/colorNormalIndecator"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/ivMiniIcon"
+                    android:layout_width="20dp"
+                    android:visibility="gone"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/icon_mini_time_machine" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <org.xiaoxingqi.shengxi.wedgit.TransLayout
+        android:id="@+id/transLayout"
+        app:progressLayout="@layout/view_progress"
+        app:offlineLayout="@layout/view_offline"
+        app:emptyLayout="@layout/view_empty"
+        app:defaultState="content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorGrayContent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvRule"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="@string/string_privacyAct_18"
+                    android:textColor="@color/colorText666666"
+                    android:textSize="13sp" />
+
+                <org.xiaoxingqi.shengxi.wedgit.ViewScoreSetting
+                    android:id="@+id/viewNever"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:background="@color/colorContentBackground"
+                    app:second_color="@color/colorNormalIndecator"
+                    app:title_name="@string/string_voice_style_setting_7" />
+
+                <org.xiaoxingqi.shengxi.wedgit.ViewScoreSetting
+                    android:id="@+id/viewTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/colorContentBackground"
+                    app:second_color="@color/colorNormalIndecator"
+                    app:title_name="@string/string_privacyAct_17" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="24dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ivMiniIcon1"
+                        android:layout_width="20dp"
+                        android:visibility="gone"
+                        android:layout_height="20dp"
+                        android:src="@mipmap/icon_mini_time_machine" />
+
+                    <TextView
+                        android:id="@+id/tvDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/string_privacyAct_19"
+                        android:drawablePadding="4dp"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/colorTextGray" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_hint_drawable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:minWidth="180dp"
+                    android:minHeight="300dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/drawable_privacy_photo" />
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </org.xiaoxingqi.shengxi.wedgit.TransLayout>
+
+</LinearLayout>

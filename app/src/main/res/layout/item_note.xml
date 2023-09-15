@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="68dp"
+    android:layout_marginBottom="8dp"
+    android:background="@color/colorContentBackground">
+
+    <TextView
+        android:id="@+id/tv_FirstTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="16dp"
+        android:includeFontPadding="false"
+        android:text="你上司"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_SecondTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_FirstTime"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="13dp"
+        android:includeFontPadding="false"
+        android:text="你爷爷"
+        android:textColor="@color/colorTextGray"
+        android:textSize="11sp" />
+
+    <org.xiaoxingqi.shengxi.wedgit.VoiceProgress
+        android:id="@+id/voiceProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginLeft="86dp"
+        android:layout_marginTop="15dp"
+        app:reStartLeftId="@mipmap/icon_re_start_left" />
+
+</RelativeLayout>

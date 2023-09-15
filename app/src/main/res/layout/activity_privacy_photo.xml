@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:contentInsetStart="0dp">
+
+            <ImageView
+                android:id="@+id/btn_Back"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="8dp"
+                android:padding="4dp"
+                android:src="@mipmap/icon_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:text="@string/string_user_voice_permission_1"
+                android:textColor="@color/colorNormalIndecator"
+                android:textSize="17sp" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <org.xiaoxingqi.shengxi.wedgit.TransLayout
+        android:id="@+id/transLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultState="content"
+        app:emptyLayout="@layout/view_empty"
+        app:offlineLayout="@layout/view_offline"
+        app:progressLayout="@layout/view_progress">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorGrayContent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="@string/string_PrivacyAct_8"
+                    android:textColor="@color/colorTextGray"
+                    android:textSize="13sp" />
+
+                <org.xiaoxingqi.shengxi.wedgit.ViewScoreSetting
+                    android:id="@+id/viewNever"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:background="@color/colorContentBackground"
+                    app:second_color="@color/colorNormalIndecator"
+                    app:title_name="@string/string_PrivacyAct_4" />
+
+                <org.xiaoxingqi.shengxi.wedgit.ViewScoreSetting
+                    android:id="@+id/viewTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/colorContentBackground"
+                    app:second_color="@color/colorNormalIndecator"
+                    app:title_name="@string/string_PrivacyAct_3" />
+
+                <org.xiaoxingqi.shengxi.wedgit.ViewScoreSetting
+                    android:id="@+id/view_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/colorContentBackground"
+                    app:second_color="@color/colorNormalIndecator"
+                    app:title_name="最近三十天" />
+
+                <org.xiaoxingqi.shengxi.wedgit.ViewScoreSetting
+                    android:id="@+id/view_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/colorContentBackground"
+                    app:second_color="@color/colorNormalIndecator"
+                    app:title_name="全部" />
+
+
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/string_privacy_13"
+                    android:textColor="@color/colorTextGray"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/iv_hint_drawable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:minWidth="203dp"
+                    android:visibility="gone"
+                    android:minHeight="340dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/drawable_privacy_photo" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </org.xiaoxingqi.shengxi.wedgit.TransLayout>
+
+</LinearLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorContentBackground"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="13dp"
+        android:background="@color/colorGrayContent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_characterType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="29dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:includeFontPadding="false"
+            android:textColor="@color/color_switch_check"
+            android:textSize="23sp" />
+
+        <RelativeLayout
+            android:layout_marginBottom="14dp"
+            android:layout_below="@+id/tv_characterType"
+            android:id="@+id/relativeCrop"
+            android:layout_marginTop="28dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearWebLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <org.xiaoxingqi.shengxi.wedgit.LoadContentWebView
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/webView"
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    android:minHeight="320dp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivBlueCircle"
+                android:layout_width="10dp"
+                android:visibility="invisible"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="122dp"
+                android:background="@drawable/shape_circle_blue" />
+
+            <TextView
+                android:id="@+id/tv_Expend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearWebLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="19dp"
+                android:shadowColor="#33272b2b"
+                android:shadowDx="0"
+                android:shadowDy="1"
+                android:shadowRadius="3.0"
+                android:text="@string/string_test_5"
+                android:textColor="@color/color_switch_check"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_Example1"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_Expend"
+                android:layout_marginTop="19dp"
+                android:drawableLeft="@drawable/shape_circle_blue"
+                android:drawablePadding="15dp"
+                android:textColor="@color/colorNormalIndecator"
+                android:textSize="13sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_Example1"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="34dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorContentBackground"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="322dp"
+            android:id="@+id/tv_Share"
+            android:layout_marginTop="17dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/draw_charact_result_share"
+            android:layout_height="69dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/color_text_white"
+                android:textSize="15sp"
+                android:text="@string/string_test_8" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="@color/color_text_white"
+                android:text="@string/string_test_17" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_Comment_Type"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="19dp"
+        android:includeFontPadding="false"
+        android:textColor="@color/color_switch_check"
+        android:textSize="24sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_personal_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="有什么话想对勇敢乐观们说？"
+            android:layout_marginLeft="24dp"
+            android:textSize="12sp"
+            android:textColor="@color/colorNormalIndecator" />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24dp"
+            android:id="@+id/tv_Comment"
+            android:layout_width="101dp"
+            android:layout_height="29dp"
+            android:textStyle="bold"
+            android:background="@drawable/shape_gray_r_14"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/string_test_9"
+            android:textColor="@color/colorNormalIndecator"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_Empty_Hint"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/string_test_4"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+</LinearLayout>

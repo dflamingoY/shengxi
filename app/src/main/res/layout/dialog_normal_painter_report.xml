@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/colorGrayContent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_Attach"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/colorContentBackground"
+        android:gravity="center"
+        android:text="@string/string_report_attack"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_Porn"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorContentBackground"
+        android:gravity="center"
+        android:text="@string/string_report_porn"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_Junk"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorContentBackground"
+        android:gravity="center"
+        android:text="@string/string_report_ad"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_illegal"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorContentBackground"
+        android:gravity="center"
+        android:text="@string/string_report_illegal"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_Cancel"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorContentBackground"
+        android:gravity="center"
+        android:text="@string/string_cancel"
+        android:textColor="@color/colorTextGray"
+        android:textSize="15sp" />
+
+</LinearLayout>

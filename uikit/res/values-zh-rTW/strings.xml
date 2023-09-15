@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="recording_cancel">手指上滑，取消發送</string>
+    <string name="recording_cancel_tip">鬆開手指，取消發送</string>
+    <string name="date_Today">今天</string>
+    <string name="date_Yesterday">昨日</string>
+    <string name="record_audio">按住 說話</string>
+    <string name="record_audio_end">鬆開 結束</string>
+</resources>

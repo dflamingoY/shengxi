@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/colorContentBackground"
+    android:orientation="vertical">
+
+    <org.xiaoxingqi.shengxi.wedgit.ColorPickerView
+        android:id="@+id/colorPicker"
+        android:layout_width="match_parent"
+        android:layerType="software"
+        android:layout_height="wrap_content" />
+
+    <org.xiaoxingqi.shengxi.wedgit.canvas.HorizontalColorsView
+        android:id="@+id/colorsView"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="58dp"
+        android:tag="portrait" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/colorContentBackground"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_commit"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="18dp"
+            android:src="@mipmap/icon_canvas_back" />
+
+        <org.xiaoxingqi.shengxi.wedgit.ProgressSeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_weight="1"
+            android:max="255"
+            android:maxHeight="6dp"
+            android:minHeight="6dp"
+            android:progress="255"
+            android:progressDrawable="@drawable/shape_colors_progress"
+            android:thumb="@drawable/shape_seekbar_thumb" />
+
+        <org.xiaoxingqi.shengxi.wedgit.canvas.CircleColorSelectorView
+            android:id="@+id/view_show_colors"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_marginRight="24dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

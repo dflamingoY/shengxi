@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/color_Dividing"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_Camera"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/colorContentBackground"
+        android:gravity="center"
+        android:text="@string/string_camera"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_Album"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/colorContentBackground"
+        android:gravity="center"
+        android:text="@string/string_selected_photo"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_Save"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/colorContentBackground"
+        android:gravity="center"
+        android:text="@string/string_save_pic"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_Other"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorContentBackground"
+        android:gravity="center"
+        android:text="@string/string_save_pic"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/tv_Cancel"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorContentBackground"
+        android:gravity="center"
+        android:text="@string/string_cancel"
+        android:textColor="@color/colorTextGray"
+        android:textSize="15sp" />
+
+
+</LinearLayout>

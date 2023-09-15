@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorContentBackground"
+    android:orientation="vertical">
+
+    <org.xiaoxingqi.shengxi.wedgit.EchoTypeView
+        android:id="@+id/echoSystem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        app:echoImg="@mipmap/icon_echo_system"
+        app:echoTitle="@string/string_System" />
+
+    <org.xiaoxingqi.shengxi.wedgit.EchoTypeView
+        android:id="@+id/echoNewF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        app:echoImg="@mipmap/icon_echoe_friends"
+        app:echoTitle="@string/string_new_friend_request" />
+
+    <org.xiaoxingqi.shengxi.wedgit.EchoTypeView
+        android:id="@+id/echoHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        app:echoImg="@mipmap/icon_echoe_msg"
+        app:echoTitle="@string/string_newMsgHintAct_13" />
+
+</LinearLayout>

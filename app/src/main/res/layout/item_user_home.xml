@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorContentBackground"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:id="@+id/tv_FirstTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:includeFontPadding="false"
+            android:textColor="@color/colorNormalIndecator"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_SecondTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="34dp"
+            android:textColor="@color/colorTextGray"
+            android:textSize="11sp" />
+
+        <org.xiaoxingqi.shengxi.wedgit.VoiceProgress
+            android:id="@+id/voiceProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:layout_marginLeft="86dp"
+            android:layout_marginTop="15dp"
+            app:reStartLeftId="@mipmap/icon_re_start_left" />
+
+        <TextView
+            android:id="@+id/tv_BottomView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="86dp"
+            android:layout_marginTop="20dp"
+            android:text="开始记录"
+            android:textColor="@color/colorTextGray"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_Action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/voiceProgress"
+            android:layout_alignLeft="@+id/voiceProgress"
+            android:layout_marginTop="8dp"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:textColor="#ff00d0d1"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:id="@+id/iv_Privacy"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_alignTop="@+id/voiceProgress"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="21dp"
+            android:src="@mipmap/icon_local_privacy"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <org.xiaoxingqi.shengxi.wedgit.ImageGroupView
+        android:id="@+id/imageGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="14.5dp"
+        android:visibility="gone" />
+
+    <org.xiaoxingqi.shengxi.wedgit.VoiceListItemView
+        android:id="@+id/voiceItemView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:visibility="gone" />
+
+    <!--<RelativeLayout
+        android:id="@+id/relativeMovie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:visibility="gone">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardlayout"
+            android:layout_width="96dp"
+            android:layout_height="133dp"
+            android:layout_marginLeft="15dp"
+            app:cardBackgroundColor="#00ffffff"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="0dp">
+
+            <ImageView
+                android:id="@+id/iv_Movies"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/drawable_default_tmpry" />
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_MovieName"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/cardlayout"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:text="超时空同居 (2018)"
+            android:textColor="@color/colorNormalIndecator"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <org.xiaoxingqi.shengxi.wedgit.SelectorImage
+            android:id="@+id/iv_ScoreType"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="49dp"
+            android:layout_marginRight="12dp"
+            android:layout_toRightOf="@+id/cardlayout"
+            android:src="@mipmap/icon_edit_good" />
+
+        <TextView
+            android:id="@+id/tv_MovieDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="96dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@+id/cardlayout"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="6dp"
+            android:maxLines="2"
+            android:textColor="@color/colorTextGray"
+            android:textSize="12sp" />
+
+    </RelativeLayout>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/colorGrayContent" />
+
+</LinearLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.xiaoxingqi.shengxi.wedgit.TransLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/transLayout"
+    app:emptyLayout="@layout/view_empty"
+    app:progressLayout="@layout/view_progress"
+    app:offlineLayout="@layout/view_offline"
+    app:defaultState="content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/colorContentBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:elevation="0dp">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:contentInsetStart="0dp">
+
+                <TextView
+                    android:id="@+id/btn_Back"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorNormalIndecator"
+                    android:text="@string/string_net_server_4" />
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/string_single_pwd_5"
+                    android:textColor="@color/colorNormalIndecator"
+                    android:textSize="15sp" />
+
+                <org.xiaoxingqi.shengxi.wedgit.SwitchButton
+                    android:id="@+id/toggle_Button"
+                    android:layout_width="46dp"
+                    android:layout_height="28dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    app:sb_background="@color/color_text_white"
+                    app:sb_button_color="@color/color_text_white"
+                    app:sb_checked_color="@color/color_switch_check"
+                    app:sb_shadow_color="@color/color_switch_token"
+                    app:sb_shadow_effect="false"
+                    app:sb_show_indicator="false"
+                    app:sb_button_stroke_color="@color/color_sb_stroke"
+                    app:sb_uncheck_color="@color/color_e5e5e5_to_5c5c5c" />
+
+                <TextView
+                    android:id="@+id/tvHelp"
+                    android:visibility="gone"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="end"
+                    android:padding="4dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorNormalIndecator"
+                    android:text="@string/string_single_pwd_4" />
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:background="@color/colorGrayContent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivPwdBg"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                android:layout_height="match_parent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_img_layer" />
+
+            <ImageView
+                android:id="@+id/ivClickHint"
+                android:layout_width="143dp"
+                android:visibility="gone"
+                android:layout_height="90dp"
+                android:textSize="17sp"
+                android:src="@mipmap/icon_long_click_change_pwd_cover"
+                android:layout_marginTop="7dp"
+                android:layout_gravity="end" />
+
+            <LinearLayout
+                android:id="@+id/linearPwdMenu"
+                android:layout_marginRight="-1dp"
+                android:layout_width="90dp"
+                android:background="@drawable/shape_left_radius_r_20_stroke"
+                android:layout_gravity="center_vertical|end"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_height="275dp">
+
+                <TextView
+                    android:id="@+id/tvCurrentContent"
+                    android:layout_marginTop="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="3dp"
+                    android:includeFontPadding="false"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorNormalIndecator"
+                    android:text="@string/string_single_pwd_7"
+                    android:gravity="center" />
+
+                <org.xiaoxingqi.shengxi.wedgit.discretescrollview.DiscreteScrollView
+                    android:id="@+id/discreteView1"
+                    android:layout_marginTop="25dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_width="70dp"
+                    android:layout_height="25dp"
+                    android:background="@mipmap/icon_pwd_scroller_bg" />
+
+                <org.xiaoxingqi.shengxi.wedgit.discretescrollview.DiscreteScrollView
+                    android:id="@+id/discreteView2"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="70dp"
+                    android:layout_height="25dp"
+                    android:background="@mipmap/icon_pwd_scroller_bg" />
+
+                <org.xiaoxingqi.shengxi.wedgit.discretescrollview.DiscreteScrollView
+                    android:id="@+id/discreteView3"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_width="70dp"
+                    android:layout_height="25dp"
+                    android:background="@mipmap/icon_pwd_scroller_bg" />
+
+                <ImageView
+                    android:id="@+id/ivConfirm"
+                    android:layout_marginTop="25dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:textSize="14sp"
+                    android:src="@drawable/selector_pwd_enter" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+</org.xiaoxingqi.shengxi.wedgit.TransLayout>

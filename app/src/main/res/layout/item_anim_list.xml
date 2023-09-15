@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardLayout"
+        android:layout_marginTop="25dp"
+        app:cardBackgroundColor="#00ffffff"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivAnim"
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:layout_alignTop="@+id/cardLayout"
+        android:layout_alignEnd="@+id/cardLayout"
+        android:layout_alignStart="@+id/cardLayout"
+        android:layout_alignBottom="@+id/cardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_img_layer" />
+
+    <TextView
+        android:id="@+id/tvUnRead"
+        android:visibility="gone"
+        android:layout_alignEnd="@+id/cardLayout"
+        android:layout_alignTop="@+id/cardLayout"
+        android:layout_marginEnd="-17dp"
+        android:layout_marginTop="-11dp"
+        android:layout_width="55dp"
+        android:layout_height="22dp"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:text="未读"
+        android:textColor="@color/color_white_2_b2b2b2"
+        android:background="@drawable/shape_r_5_round_ff7373" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvRead"
+        android:layout_alignEnd="@+id/cardLayout"
+        android:layout_alignTop="@+id/cardLayout"
+        android:layout_width="55dp"
+        android:layout_height="22dp"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:text="已读"
+        android:textColor="@color/color_white_2_b2b2b2"
+        android:background="@drawable/shape_r_5_round_84d757" />
+
+</RelativeLayout>

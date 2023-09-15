@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrayContent"
+    android:gravity="center_horizontal"
+    android:focusable="true"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="78dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/icon_empty_topic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="21dp"
+        android:text="@string/string_topic_1"
+        android:textColor="@color/colorTextGray"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp">
+
+        <TextView
+            android:id="@+id/tv_CreateTopic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_blue_r_20"
+            android:drawableLeft="@mipmap/icon_record"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:paddingLeft="54dp"
+            android:paddingTop="12dp"
+            android:paddingRight="54dp"
+            android:paddingBottom="12dp"
+            android:text="@string/string_topic_2"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@+id/tv_CreateTopic"
+            android:layout_alignTop="@+id/tv_CreateTopic"
+            android:layout_alignEnd="@+id/tv_CreateTopic"
+            android:layout_alignBottom="@+id/tv_CreateTopic"
+            android:background="@drawable/shape_blue_r_20_layer"
+            android:clickable="false"
+            android:focusable="false" />
+
+    </RelativeLayout>
+
+</LinearLayout>

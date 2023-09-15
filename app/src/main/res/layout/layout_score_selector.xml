@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:orientation="horizontal">
+
+    <org.xiaoxingqi.shengxi.wedgit.SelectRecommendView
+        android:id="@+id/linearGood"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/selector_score"
+        android:gravity="center"
+        app:isSelected_img="false"
+        app:normalColor="@color/colorTextGray"
+        app:select_Title="@string/string_recommend"
+        app:select_img_id="@mipmap/btn_score_prefect"
+        app:selectedColors="@color/color_score_stroke"
+        app:selected_img_id="@mipmap/icon_edit_good" />
+
+    <org.xiaoxingqi.shengxi.wedgit.SelectRecommendView
+        android:id="@+id/linearNormal"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/selector_movies_fair"
+        app:isSelected_img="false"
+        app:normalColor="@color/colorTextGray"
+        app:select_Title="@string/string_fair"
+        app:select_img_id="@mipmap/icon_edit_normal"
+        app:selectedColors="#5DE1C8"
+        app:selected_img_id="@mipmap/btn_score_normal" />
+
+    <org.xiaoxingqi.shengxi.wedgit.SelectRecommendView
+        android:id="@+id/linearBad"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/selector_movies_bad"
+        android:gravity="center"
+        app:isSelected_img="false"
+        app:normalColor="@color/colorTextGray"
+        app:select_Title="@string/string_bad"
+        app:select_img_id="@mipmap/icon_edit_bad"
+        app:selectedColors="#62E9FF"
+        app:selected_img_id="@mipmap/btn_score_bad" />
+
+</LinearLayout>

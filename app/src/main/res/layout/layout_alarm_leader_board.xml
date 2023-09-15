@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorContentBackground"
+    android:paddingTop="24dp"
+    android:weightSum="5"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/iv_flag"
+            android:layout_centerHorizontal="true"
+            android:layout_width="16dp"
+            android:src="@mipmap/icon_alarm_board_1"
+            android:layout_height="25dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linear_angel"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView1"
+            android:layout_centerHorizontal="true"
+            android:layout_width="29dp"
+            app:cardCornerRadius="14.5dp"
+            android:background="#00ffffff"
+            app:cardBackgroundColor="#00ffffff"
+            app:cardElevation="0dp"
+            android:layout_height="29dp">
+
+            <ImageView
+                android:id="@+id/iv_angel"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="match_parent" />
+
+            <View
+                android:id="@+id/viewLayerAngel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_img_layer" />
+
+        </android.support.v7.widget.CardView>
+
+        <ImageView
+            android:id="@+id/iv_user_type_1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignRight="@+id/cardView1"
+            android:layout_alignBottom="@+id/cardView1"
+            android:src="@drawable/selector_user_use_type"
+            android:visibility="gone" />
+
+        <org.xiaoxingqi.shengxi.wedgit.ColorArraysTextView
+            android:id="@+id/tv_angel_name"
+            android:layout_below="@+id/cardView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="9dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/colorTextGray"
+            app:colorArrays_1="@color/color_ffb33c_to_b37f2b"
+            app:colorArrays_2="@color/color_8198AB_to_47545E"
+            app:colorArrays_3="@color/color_CB6E44_to_80452A"
+            app:colorArrays_4="@color/color_9FB2D7_to_66728A"
+            app:colorArrays_5="@color/color_9FB2D7_to_66728A" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linear_monster"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.CardView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/cardView2"
+            android:layout_width="29dp"
+            app:cardCornerRadius="14.5dp"
+            app:cardElevation="0dp"
+            android:background="#00ffffff"
+            app:cardBackgroundColor="#00ffffff"
+            android:layout_height="29dp">
+
+            <ImageView
+                android:id="@+id/iv_monster"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="match_parent" />
+
+            <View
+                android:id="@+id/viewLayerMonster"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_img_layer" />
+
+        </android.support.v7.widget.CardView>
+
+        <ImageView
+            android:id="@+id/iv_user_type_2"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignRight="@+id/cardView2"
+            android:layout_alignBottom="@+id/cardView2"
+            android:src="@drawable/selector_user_use_type"
+            android:visibility="gone" />
+
+        <org.xiaoxingqi.shengxi.wedgit.ColorArraysTextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_monster_name"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginTop="9dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextGray"
+            android:layout_below="@+id/cardView2"
+            app:colorArrays_1="@color/color_ffb33c_to_b37f2b"
+            app:colorArrays_2="@color/color_8198AB_to_47545E"
+            app:colorArrays_3="@color/color_CB6E44_to_80452A"
+            app:colorArrays_4="@color/color_9FB2D7_to_66728A"
+            app:colorArrays_5="@color/color_9FB2D7_to_66728A" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linear_god"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_centerHorizontal="true"
+            android:layout_width="29dp"
+            app:cardCornerRadius="14.5dp"
+            app:cardElevation="0dp"
+            android:background="#00ffffff"
+            app:cardBackgroundColor="#00ffffff"
+            android:layout_height="29dp">
+
+            <ImageView
+                android:id="@+id/iv_god"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="match_parent" />
+
+            <View
+                android:id="@+id/viewLayerGod"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_img_layer" />
+
+        </android.support.v7.widget.CardView>
+
+        <ImageView
+            android:id="@+id/iv_user_type_3"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignRight="@+id/cardView3"
+            android:layout_alignBottom="@+id/cardView3"
+            android:src="@drawable/selector_user_use_type"
+            android:visibility="gone" />
+
+        <org.xiaoxingqi.shengxi.wedgit.ColorArraysTextView
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/cardView3"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:id="@+id/tv_god_name"
+            android:layout_marginTop="9dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextGray"
+            app:colorArrays_1="@color/color_ffb33c_to_b37f2b"
+            app:colorArrays_2="@color/color_8198AB_to_47545E"
+            app:colorArrays_3="@color/color_CB6E44_to_80452A"
+            app:colorArrays_4="@color/color_9FB2D7_to_66728A"
+            app:colorArrays_5="@color/color_9FB2D7_to_66728A" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearWord"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView4"
+            android:layout_centerHorizontal="true"
+            android:layout_width="29dp"
+            app:cardCornerRadius="14.5dp"
+            app:cardElevation="0dp"
+            android:background="#00ffffff"
+            app:cardBackgroundColor="#00ffffff"
+            android:layout_height="29dp">
+
+            <ImageView
+                android:id="@+id/ivWordUser"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="match_parent" />
+
+            <View
+                android:id="@+id/viewLayerWord"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_img_layer" />
+
+        </android.support.v7.widget.CardView>
+
+        <ImageView
+            android:id="@+id/ivWordType"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignRight="@+id/cardView4"
+            android:layout_alignBottom="@+id/cardView4"
+            android:src="@drawable/selector_user_use_type"
+            android:visibility="gone" />
+
+        <org.xiaoxingqi.shengxi.wedgit.ColorArraysTextView
+            android:id="@+id/tvWordCount"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/cardView4"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginTop="9dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextGray"
+            app:colorArrays_1="@color/color_ffb33c_to_b37f2b"
+            app:colorArrays_2="@color/color_8198AB_to_47545E"
+            app:colorArrays_3="@color/color_CB6E44_to_80452A"
+            app:colorArrays_4="@color/color_9FB2D7_to_66728A"
+            app:colorArrays_5="@color/color_9FB2D7_to_66728A" />
+
+    </RelativeLayout>
+
+</LinearLayout>

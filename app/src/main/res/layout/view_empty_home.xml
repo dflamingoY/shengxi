@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="146dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/icon_home_friend_empty" />
+
+    <ImageView
+        android:id="@+id/tv_home_mood_hint"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        android:src="@drawable/selector_home_empty_user_voices"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal" />
+
+</LinearLayout>

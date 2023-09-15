@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white_grey_content">
+
+    <LinearLayout
+        android:id="@+id/linearPhotoSelf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorContentBackground"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="123dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/draw_empty_my_photo" />
+
+        <ImageView
+            android:id="@+id/tv_Photo_Hint"
+            android:layout_width="241dp"
+            android:visibility="gone"
+            android:layout_height="15dp"
+            android:layout_marginTop="31dp"
+            android:src="@drawable/selector_album_empty_voices_list" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp">
+
+            <TextView
+                android:id="@+id/tv_UploadPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/shape_blue_r_20"
+                android:drawableLeft="@mipmap/icon_record"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:text="@string/string_moodList_photo_i_2"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@+id/tv_UploadPhoto"
+                android:layout_alignTop="@+id/tv_UploadPhoto"
+                android:layout_alignEnd="@+id/tv_UploadPhoto"
+                android:layout_alignBottom="@+id/tv_UploadPhoto"
+                android:background="@drawable/shape_blue_r_20_layer"
+                android:clickable="false"
+                android:focusable="false" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearPhotoOther"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="126dp"
+            android:layout_height="121dp"
+            android:layout_marginTop="70dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/draw_empty_voice_other" />
+
+        <TextView
+            android:id="@+id/tv_OtherHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:text="@string/string_empty_voice_list_10"
+            android:textColor="@color/colorTextGray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_CreateFriend"
+            android:layout_width="192dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="43dp"
+            android:background="@drawable/selector_voice_add_friends"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="+好友"
+            android:textColor="@color/color_text_white"
+            android:textSize="13sp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+</RelativeLayout>

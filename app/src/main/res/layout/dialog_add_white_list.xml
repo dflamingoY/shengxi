@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="50dp"
+    android:background="@drawable/shape_white_r11"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:gravity="center_horizontal"
+        android:text="@string/string_add_white_list_success"
+        android:textColor="@color/colorText666666"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/shape_blue_bottom_r11"
+        android:gravity="center"
+        android:text="@string/string_space_close"
+        android:textColor="@color/white"
+        android:textSize="13sp" />
+
+</LinearLayout>

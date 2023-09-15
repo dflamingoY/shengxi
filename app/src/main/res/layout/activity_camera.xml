@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frame_boot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+    <org.xiaoxingqi.zxing.view.GroupChildView
+        android:layout_width="match_parent"
+        app:layer_color="@color/color_4d333333"
+        android:clipChildren="false"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/capture_crop_layout"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:clipChildren="false"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center">
+
+            <org.xiaoxingqi.zxing.view.FindView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+    </org.xiaoxingqi.zxing.view.GroupChildView>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="170dp"
+        android:textColor="@color/color_white_2_b2b2b2"
+        android:textSize="14sp"
+        android:background="@drawable/shape_r_10_transparent_333333"
+        android:text="@string/string_47" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tintToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/colorContentBackground"
+        app:contentInsetStart="0dp">
+
+        <ImageView
+            android:id="@+id/btn_Back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="8dp"
+            android:padding="4dp"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:letterSpacing="-0.02"
+            android:text="扫描图书条码"
+            android:textColor="@color/colorNormalIndecator"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/relative_Photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="16dp"
+            android:gravity="center_horizontal"
+            android:onClick="btn"
+            android:text="相册"
+            android:textColor="@color/colorNormalIndecator"
+            android:textSize="15sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <Button
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="open"
+        android:text="sb灯" />
+</FrameLayout>

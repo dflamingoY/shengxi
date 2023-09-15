@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.gw.swipeback.SwipeBackLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeBackLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.xiaoxingqi.shengxi.wedgit.TransLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/transLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultState="content"
+        app:emptyLayout="@layout/view_empty"
+        app:offlineLayout="@layout/view_offline"
+        app:progressLayout="@layout/view_progress">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black" />
+
+        <LinearLayout
+            android:id="@+id/linearContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="31dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <org.xiaoxingqi.shengxi.wedgit.ViewIndicatorAlbum
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="6dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="31dp"
+            app:normalColorIndicator="#80ffffff"
+            app:selectedColor="#ffffff" />
+
+        <org.xiaoxingqi.shengxi.wedgit.HintSaveImgView
+            android:id="@+id/hintSave"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </org.xiaoxingqi.shengxi.wedgit.TransLayout>
+</com.gw.swipeback.SwipeBackLayout>

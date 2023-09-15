@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.xiaoxingqi.shengxi.wedgit.TransLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/transLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:defaultState="content"
+    app:emptyLayout="@layout/view_empty"
+    app:offlineLayout="@layout/view_offline"
+    app:progressLayout="@layout/view_progress">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_white"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btn_Back"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="30dp"
+                android:padding="4dp"
+                android:src="@mipmap/icon_back"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_character_signRecord1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="47dp"
+                android:text="@string/string_sign_record_i_1"
+                android:textColor="#FFBABABA"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="45dp"
+                android:text="希望在声昔..."
+                android:textColor="#999999"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tv_character_signRecord2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="29dp"
+                android:gravity="center"
+                android:lineSpacingExtra="14dp"
+                android:text="@string/string_signRecordAct_2"
+                android:textColor="#FFBABABA"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_sign_record3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="29dp"
+                android:src="@mipmap/icon_sign_record_i_1"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="29dp"
+                android:text="@string/string_sign_hint_10"
+                android:textColor="@color/color_b5b5b5"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <!--
+                    <TextView
+                        android:id="@+id/tv_character_signRecord3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="29dp"
+                        android:text="@string/string_sign_record_i_3"
+                        android:textColor="#FF474747"
+                        android:textSize="22sp" />
+            -->
+
+            <TextView
+                android:id="@+id/tv_Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="89dp"
+                android:text="0S"
+                android:textColor="#999998"
+                android:textSize="23sp" />
+
+            <org.xiaoxingqi.shengxi.wedgit.TouchRecordView
+                android:id="@+id/touchRecord"
+                android:layout_width="116dp"
+                android:layout_height="116dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="38dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_circle_blue"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="34dp"
+                        android:layout_height="40dp"
+                        android:src="@mipmap/icon_record" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="@string/string_signRecordAct_4"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </org.xiaoxingqi.shengxi.wedgit.TouchRecordView>
+
+            <RelativeLayout
+                android:id="@+id/relative_Operate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/relativeRecord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp">
+
+                    <org.xiaoxingqi.shengxi.wedgit.WaveView
+                        android:id="@+id/waveView"
+                        android:layout_width="116dp"
+                        android:layout_height="116dp"
+                        android:layout_centerInParent="true">
+
+                    </org.xiaoxingqi.shengxi.wedgit.WaveView>
+
+                    <ImageView
+                        android:id="@+id/iv_Record"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:layout_centerInParent="true"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/icon_sign_record_1" />
+
+                    <TextView
+                        android:id="@+id/tv_start_record"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/iv_Record"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="-2dp"
+                        android:includeFontPadding="false"
+                        android:text="@string/string_recordAct_1"
+                        android:textColor="@color/colorIndecators"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvRecordMaxLength"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="227dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/string_recordAct_2"
+                    android:textColor="#999998"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_Send"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="68dp"
+                    android:layout_marginTop="212dp"
+                    android:layout_marginRight="68dp"
+                    android:layout_marginBottom="24dp"
+                    android:alpha="0"
+                    android:background="@drawable/shape_stroke_blue_r_7_b_white"
+                    android:gravity="center"
+                    android:text="@string/string_sign_record_start_i"
+                    android:textColor="@color/colorIndecators"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:id="@+id/linearOperate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="38dp"
+                    android:layout_marginTop="78dp"
+                    android:layout_toRightOf="@+id/relativeRecord"
+                    android:alpha="0"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/tv_RePlay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <org.xiaoxingqi.shengxi.wedgit.NoSkinImageView
+                            android:id="@+id/iv_rePlay"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="@string/string_recordAct_3"
+                            android:textColor="#999998"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tv_ReRecord"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="29dp">
+
+                        <org.xiaoxingqi.shengxi.wedgit.NoSkinImageView
+                            android:id="@+id/iv_delete"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="left"
+                            android:text="@string/string_recordAct_4"
+                            android:textColor="#999998"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</org.xiaoxingqi.shengxi.wedgit.TransLayout>

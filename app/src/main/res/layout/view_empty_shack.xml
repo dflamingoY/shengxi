@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:layout_width="135dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="108dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/icon_home_shake_empty" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="试着摇一下"
+        android:textSize="12sp"
+        android:textColor="@color/color_b5b5b5"
+        android:layout_marginTop="256dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

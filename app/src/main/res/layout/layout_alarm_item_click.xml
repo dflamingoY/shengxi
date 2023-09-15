@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <org.xiaoxingqi.shengxi.wedgit.skinView.SkinStatueText
+        android:id="@+id/skinTextAll"
+        android:layout_marginLeft="15dp"
+        android:layout_width="34dp"
+        android:layout_height="22dp"
+        android:text="全部"
+        android:textSize="10sp"
+        android:textColor="@color/colorTextGray"
+        android:gravity="center"
+        android:background="@drawable/selector_check_alarm_style"
+        app:statusTextSelected="@color/color_text_white" />
+
+    <org.xiaoxingqi.shengxi.wedgit.skinView.SkinStatueText
+        android:layout_marginLeft="10dp"
+        android:id="@+id/skinTextDubbing"
+        android:layout_width="59dp"
+        android:layout_height="22dp"
+        android:text="#求配音#"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:textColor="@color/colorTextGray"
+        android:background="@drawable/selector_check_alarm_style"
+        app:statusTextSelected="@color/color_text_white" />
+
+    <org.xiaoxingqi.shengxi.wedgit.skinView.SkinStatueText
+        android:layout_marginLeft="10dp"
+        android:id="@+id/skinTextFree"
+        android:layout_width="72dp"
+        android:layout_height="22dp"
+        android:text="#求freestyle#"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:textColor="@color/colorTextGray"
+        android:background="@drawable/selector_check_alarm_style"
+        app:statusTextSelected="@color/color_text_white" />
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/colorContentBackground">
+
+    <org.xiaoxingqi.shengxi.wedgit.SkinColorsTextView
+        android:id="@+id/tv_UserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:includeFontPadding="false"
+        android:textSize="12dp"
+        app:textNormalColor="@color/colorNormalIndecator"
+        app:textSelectedColor="@color/colorIndecators" />
+
+    <TextView
+        android:id="@+id/tv_Type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/tv_UserName"
+        android:includeFontPadding="false"
+        android:textColor="@color/colorTextGray"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/ivAlarmType"
+        android:layout_toRightOf="@+id/tv_Type"
+        android:layout_width="18dp"
+        android:visibility="gone"
+        android:layout_height="18dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/selector_hint_god"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/tv_Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="12dp"
+        android:includeFontPadding="false"
+        android:textColor="@color/colorTextGray"
+        android:textSize="11dp" />
+
+    <ImageView
+        android:id="@+id/iv_Arrow"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:src="@mipmap/icon_arrow_right" />
+
+    <TextView
+        android:id="@+id/tv_follow_relieve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11dp"
+        android:textColor="@color/colorNormalIndecator"
+        android:layout_toRightOf="@+id/tv_Time"
+        android:layout_marginLeft="9dp"
+        android:layout_alignBottom="@+id/tv_Time"
+        android:layout_alignBaseline="@+id/tv_Time" />
+
+    <org.xiaoxingqi.shengxi.wedgit.SkinColorsTextView
+        android:id="@+id/tv_skinColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="15dp"
+        android:includeFontPadding="false"
+        android:textColor="@color/colorTextGray"
+        android:textSize="11sp"
+        android:visibility="gone"
+        app:textNormalColor="@color/colorTextGray"
+        app:textSelectedColor="@color/colorNormalIndecator" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:background="@color/colorGrayContent" />
+
+</RelativeLayout>

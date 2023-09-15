@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/shape_white_r_20"
+    android:gravity="center_horizontal"
+    android:layout_marginRight="24dp"
+    android:layout_marginLeft="24dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_marginTop="18dp"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/icon_user_achievement" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="200dp"
+        android:background="@mipmap/icon_achievement_record"
+        android:gravity="center"
+        android:layout_marginTop="18dp"
+        android:layout_height="55dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/color_333333to_b2b2b2"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:includeFontPadding="false"
+            android:text="@string/string_record_master" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="@string/string_everyday_record_one_voice"
+            android:textColor="@color/other_Gray_Color"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal|bottom"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvRecordCurrentStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:textSize="14sp"
+                android:textColor="@color/color_special_text_grey"
+                android:text="@string/string_current_record" />
+
+            <LinearLayout
+                android:id="@+id/linearRecordStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical"
+                android:minWidth="70dp"
+                android:background="@drawable/selector_achieve_empty"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivRecordStatue"
+                    android:layout_marginLeft="3dp"
+                    android:visibility="gone"
+                    android:layout_width="15dp"
+                    android:src="@mipmap/icon_achievement_today"
+                    android:layout_height="15dp" />
+
+                <org.xiaoxingqi.shengxi.wedgit.skinView.SkinStatueText
+                    android:id="@+id/tvCurrentRecord"
+                    android:paddingRight="5dp"
+                    android:layout_width="match_parent"
+                    android:includeFontPadding="false"
+                    android:layout_weight="1"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:textColor="@color/color_b2b2b2"
+                    app:statusTextSelected="@color/color_text_white"
+                    android:text="Day 0" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginLeft="14dp"
+            android:layout_width="38dp"
+            android:layout_marginRight="14dp"
+            android:layout_height="10dp"
+            android:layout_marginBottom="5dp"
+            android:src="@mipmap/icon_achievement_arrow_right" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvRecordHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:textSize="14sp"
+                android:textColor="@color/color_special_text_grey"
+                android:text="@string/string_today_target" />
+
+            <LinearLayout
+                android:id="@+id/linearRecordNextStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical"
+                android:minWidth="70dp"
+                android:background="@drawable/selector_achieve_next_target"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginLeft="3dp"
+                    android:layout_width="15dp"
+                    android:src="@drawable/selector_achieve_img_state"
+                    android:layout_height="15dp" />
+
+                <TextView
+                    android:id="@+id/tvToadyTarget"
+                    android:paddingRight="5dp"
+                    android:layout_width="match_parent"
+                    android:includeFontPadding="false"
+                    android:layout_weight="1"
+                    android:layout_height="20dp"
+                    android:gravity="center|end"
+                    android:textColor="@color/color_text_white"
+                    android:text="Day" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/goRecord"
+            android:layout_marginLeft="27dp"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:src="@drawable/selector_achievet_btn_status" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="200dp"
+        android:background="@mipmap/icon_achievement_record"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_height="55dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/color_333333to_b2b2b2"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:includeFontPadding="false"
+            android:text="@string/string_travel_master" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="@string/string_everyday_use_timeMachine"
+            android:textColor="@color/other_Gray_Color"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearTraveler"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal|bottom"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvTravelCurrentStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:textSize="14sp"
+                    android:textColor="@color/color_special_text_grey"
+                    android:text="@string/string_current_record" />
+
+                <LinearLayout
+                    android:id="@+id/linearTravelCurrent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center_vertical"
+                    android:minWidth="70dp"
+                    android:background="@drawable/selector_achieve_empty"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ivTravelStatus"
+                        android:visibility="gone"
+                        android:layout_marginLeft="3dp"
+                        android:layout_width="15dp"
+                        android:src="@mipmap/icon_achievement_today"
+                        android:layout_height="15dp" />
+
+                    <org.xiaoxingqi.shengxi.wedgit.skinView.SkinStatueText
+                        android:id="@+id/tvToadyReach"
+                        android:paddingRight="5dp"
+                        android:layout_width="match_parent"
+                        android:includeFontPadding="false"
+                        android:layout_weight="1"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:textColor="@color/color_b2b2b2"
+                        app:statusTextSelected="@color/color_text_white"
+                        android:text="Day 0" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_marginLeft="14dp"
+                android:layout_width="38dp"
+                android:layout_marginRight="14dp"
+                android:layout_height="10dp"
+                android:layout_marginBottom="5dp"
+                android:src="@mipmap/icon_achievement_arrow_right" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvTravelHint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:textSize="14sp"
+                    android:textColor="@color/color_special_text_grey"
+                    android:text="@string/string_today_target" />
+
+                <LinearLayout
+                    android:id="@+id/linearTravelNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center_vertical"
+                    android:minWidth="70dp"
+                    android:background="@drawable/selector_achieve_next_target"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="3dp"
+                        android:layout_width="15dp"
+                        android:src="@drawable/selector_achieve_img_state"
+                        android:layout_height="15dp" />
+
+                    <TextView
+                        android:id="@+id/tvTomorrowReach"
+                        android:paddingRight="5dp"
+                        android:layout_width="match_parent"
+                        android:includeFontPadding="false"
+                        android:layout_weight="1"
+                        android:layout_height="20dp"
+                        android:gravity="center|end"
+                        android:textColor="@color/color_text_white"
+                        android:text="Day" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivGoMachine"
+                android:layout_marginLeft="27dp"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:src="@drawable/selector_achievet_btn_status" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_below="@+id/linearTraveler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_achieve_intercept_record"
+            android:textSize="11sp"
+            android:textColor="@color/color_shallow_yellow"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="start"
+            android:layout_marginBottom="15dp"
+            android:includeFontPadding="false" />
+
+    </RelativeLayout>
+
+</LinearLayout>

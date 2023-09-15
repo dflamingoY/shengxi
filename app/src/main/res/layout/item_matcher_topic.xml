@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="54dp"
+    android:background="@color/colorContentBackground">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="34dp"
+        android:text="#"
+        android:textColor="@color/colorTextGray"
+        android:textSize="19sp" />
+
+    <org.xiaoxingqi.shengxi.wedgit.TagTextView
+        android:id="@+id/tv_Topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:includeFontPadding="false"
+        android:singleLine="true"
+        android:text="晚安"
+        android:textColor="@color/colorNormalIndecator"
+        android:textSize="15sp" />
+
+    <TextView
+            android:id="@+id/tv_Count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="33dp"
+        android:includeFontPadding="false"
+        android:text="生成新话题"
+        android:textColor="@color/colorTextGray"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="80dp"
+        android:background="@color/color_Dividing" />
+</RelativeLayout>

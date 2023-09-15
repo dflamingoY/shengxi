@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorGrayContent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorContentBackground"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#00ffffff"
+            app:contentInsetStart="0dp">
+
+            <ImageView
+                android:id="@+id/btn_Back"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="8dp"
+                android:padding="7dp"
+                android:src="@mipmap/icon_album_back" />
+
+            <TextView
+                android:id="@+id/tv_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/string_album_1"
+                android:textColor="@color/colorNormalIndecator"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/ivAdd"
+                android:layout_width="31dp"
+                android:layout_height="29dp"
+                android:visibility="gone"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"
+                android:src="@mipmap/icon_album_add" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <org.xiaoxingqi.shengxi.wedgit.TransLayout
+        android:layout_width="match_parent"
+        android:id="@+id/transLayout"
+        app:defaultState="content"
+        android:layout_weight="1"
+        app:emptyLayout="@layout/view_empty"
+        app:offlineLayout="@layout/view_offline"
+        app:progressLayout="@layout/view_progress"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_height="match_parent" />
+
+    </org.xiaoxingqi.shengxi.wedgit.TransLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_preview"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="13dp"
+        android:background="@mipmap/icon_season_preview">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/string_default_empty_season_12"
+            android:textColor="@color/colorTextGray"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

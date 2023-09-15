@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorContentBackground"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:contentInsetStart="0dp">
+
+            <ImageView
+                android:id="@+id/btn_Back"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="8dp"
+                android:padding="4dp"
+                android:src="@mipmap/icon_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/string_newMsgHintAct_1"
+                android:textColor="@color/colorNormalIndecator"
+                android:textSize="17sp" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrayContent" />
+
+    <org.xiaoxingqi.shengxi.wedgit.TransLayout
+        android:id="@+id/transLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultState="content"
+        app:emptyLayout="@layout/view_empty"
+        app:offlineLayout="@layout/view_offline"
+        app:progressLayout="@layout/view_progress">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorGrayContent"
+                android:orientation="vertical">
+
+                <org.xiaoxingqi.shengxi.wedgit.ToggleLayoutView
+                    android:id="@+id/toggleNotify"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    app:text_color="@color/colorNormalIndecator"
+                    app:typeName="通知栏提示" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:background="@color/colorGrayContent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="@string/string_newMsgHintAct_2"
+                    android:textColor="@color/colorTextGray"
+                    android:textSize="13sp" />
+
+                <org.xiaoxingqi.shengxi.wedgit.ViewMoreGroupView
+                    android:id="@+id/viewUserHobbit"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    app:title_name="交流习惯设置"
+                    app:title_size="14" />
+
+                <org.xiaoxingqi.shengxi.wedgit.ToggleLayoutView
+                    android:id="@+id/toggleComment"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    app:text_color="@color/colorNormalIndecator"
+                    app:typeName="@string/string_newMsgHintAct_3" />
+
+                <org.xiaoxingqi.shengxi.wedgit.ToggleLayoutView
+                    android:id="@+id/toggleChat"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginTop="1dp"
+                    app:text_color="@color/colorNormalIndecator"
+                    app:typeName="@string/string_newMsgHintAct_4" />
+
+                <org.xiaoxingqi.shengxi.wedgit.ToggleLayoutView
+                    android:id="@+id/toggleFriend"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginTop="1dp"
+                    app:text_color="@color/colorNormalIndecator"
+                    app:typeName="@string/string_newMsgHintAct_5" />
+
+                <org.xiaoxingqi.shengxi.wedgit.ToggleLayoutView
+                    android:id="@+id/toggleNotice"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginTop="1dp"
+                    app:text_color="@color/colorNormalIndecator"
+                    app:typeName="@string/string_newMsgHintAct_6" />
+
+                <org.xiaoxingqi.shengxi.wedgit.ToggleLayoutView
+                    android:id="@+id/togglePainter"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginTop="1dp"
+                    app:text_color="@color/colorNormalIndecator"
+                    app:toggleState="true"
+                    app:typeName="@string/string_newMsgHintAct_10" />
+
+                <org.xiaoxingqi.shengxi.wedgit.ToggleLayoutView
+                    android:id="@+id/toggleResource"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    app:toggleState="true"
+                    android:layout_marginTop="1dp"
+                    app:text_color="@color/colorNormalIndecator"
+                    app:typeName="@string/string_newMsgHintAct_11" />
+
+                <org.xiaoxingqi.shengxi.wedgit.ToggleLayoutView
+                    android:id="@+id/toggleAlarm"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginTop="1dp"
+                    app:toggleState="true"
+                    app:text_color="@color/colorNormalIndecator"
+                    app:typeName="@string/string_newMsgHintAct_12" />
+
+                <org.xiaoxingqi.shengxi.wedgit.ToggleLayoutView
+                    android:id="@+id/toggleSystem"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginTop="1dp"
+                    app:text_color="@color/colorNormalIndecator"
+                    app:typeName="@string/string_system_info" />
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </org.xiaoxingqi.shengxi.wedgit.TransLayout>
+
+</LinearLayout>

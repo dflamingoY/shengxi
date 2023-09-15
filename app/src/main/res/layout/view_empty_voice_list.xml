@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white_grey_content">
+
+    <RelativeLayout
+        android:id="@+id/relative_MyEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorContentBackground"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="123dp"
+            android:src="@mipmap/draw_empty_voice_my" />
+
+        <ImageView
+            android:id="@+id/tv_temp1"
+            android:layout_width="152dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="40dp"
+            android:visibility="invisible"
+            android:layout_marginTop="262dp"
+            android:src="@drawable/selector_voices_empty_voices_list" />
+
+        <TextView
+            android:id="@+id/tv_Voice"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_below="@+id/tv_temp1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_blue_r_20"
+            android:drawableLeft="@mipmap/icon_record"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:paddingLeft="26dp"
+            android:paddingRight="26dp"
+            android:text="@string/string_moodList_memory_i_2"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@+id/tv_Voice"
+            android:layout_alignTop="@+id/tv_Voice"
+            android:layout_alignEnd="@+id/tv_Voice"
+            android:layout_alignBottom="@+id/tv_Voice"
+            android:background="@drawable/shape_blue_r_20_layer" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_OtherEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_temp1"
+            android:layout_width="126dp"
+            android:layout_height="121dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="78dp"
+            android:src="@mipmap/draw_empty_voice_other" />
+
+        <TextView
+            android:id="@+id/tv_Other_Hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_temp1"
+            android:layout_marginTop="21dp"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:text="@string/string_empty_voice_list_19"
+            android:textColor="@color/colorTextGray"
+            android:textSize="12sp" />
+
+        <org.xiaoxingqi.shengxi.wedgit.skinView.SkinStatueText
+            android:id="@+id/tv_CreateFriend"
+            android:layout_width="192dp"
+            android:layout_height="42dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="292dp"
+            android:background="@drawable/selector_voice_add_friends"
+            android:gravity="center"
+            android:text="+好友"
+            android:textColor="@color/color_text_white"
+            android:textSize="13sp"
+            app:statusTextSelected="@color/color_b2b2b2" />
+    </RelativeLayout>
+</RelativeLayout>

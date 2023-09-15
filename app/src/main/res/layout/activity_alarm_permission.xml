@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:background="@color/colorContentBackground"
+        app:elevation="0dp"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/btn_Back"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="8dp"
+                android:padding="4dp"
+                android:src="@mipmap/icon_back" />
+
+            <TextView
+                android:id="@+id/tv_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="系统设置"
+                android:textColor="@color/colorNormalIndecator"
+                android:textSize="17sp" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrayContent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/string_please_open_alarm_server"
+        android:textSize="14sp"
+        android:textColor="@color/colorNormalIndecator"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp" />
+
+    <org.xiaoxingqi.shengxi.wedgit.ViewAlarmSetting
+        android:id="@+id/setAutoOn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_name="@string/string_auto_on"
+        app:second_title="@string/string_auto_desc"
+        app:title_selected="false" />
+
+    <org.xiaoxingqi.shengxi.wedgit.ViewAlarmSetting
+        android:id="@+id/setWhiteList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_name="@string/string_system_white_list"
+        app:second_title="@string/string_white_list_desc"
+        app:title_selected="true" />
+
+    <org.xiaoxingqi.shengxi.wedgit.ViewAlarmSetting
+        android:id="@+id/setElectric"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_name="@string/string_electric_power"
+        app:second_title="@string/string_electric_power_desc"
+        app:title_selected="false" />
+
+    <org.xiaoxingqi.shengxi.wedgit.ViewAlarmSetting
+        android:id="@+id/setBackground"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_name="@string/string_background_dialog"
+        app:second_title="@string/string_background_dialog_hint"
+        app:title_selected="true" />
+
+</LinearLayout>
